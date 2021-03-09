@@ -1,9 +1,9 @@
 _id: req_7c4282b025cc41dc85c8e28ec3732df4
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278232
+modified: 1615300183351
 created: 1605470278232
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getBlockByHash
 description: "Returns information about a block by hash.\r
 
@@ -145,6 +145,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_748f2ee1ecb243529ddd72f3ad5dea6c
 authentication: {}
 metaSortKey: -1605470278232
 isPrivate: false

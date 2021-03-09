@@ -1,9 +1,9 @@
 _id: req_7a132c5ec5d643bea8c2a8c6c628f553
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470277975
+modified: 1615300676422
 created: 1605470277975
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: stopRPC
 description: >-
   The `stopRPC` administrative method closes the currently open HTTP RPC
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0e934cc16c9141929d3a9f495033500f
 authentication: {}
 metaSortKey: -1605470277975
 isPrivate: false

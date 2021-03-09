@@ -1,9 +1,9 @@
 _id: req_3e95853be5c246c09c2bbb2fb819a778
 type: Request
 parentId: fld_5176b508b9d043869b2e3df427bd6d43
-modified: 1605470278059
+modified: 1615300490993
 created: 1605470278059
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getMessages
 description: "Get all messages matching a filter. Unlike `shh_getFilterChanges`
   this returns all messages.\r
@@ -51,6 +51,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_ab13de3fd74f41ec99ac0afa02b5db31
 authentication: {}
 metaSortKey: -1605470278059
 isPrivate: false

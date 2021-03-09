@@ -1,9 +1,9 @@
 _id: req_3addfdae8a3f40b4a89b0bcbcabc1d9b
 type: Request
 parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
-modified: 1605470278335
+modified: 1615299986726
 created: 1605470278335
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: listening
 description: "Returns `true` if client is actively listening for network
   connections.\r
@@ -37,6 +37,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_28253d16a72f4bc9bff044c31545621e
 authentication: {}
 metaSortKey: -1605470278335
 isPrivate: false

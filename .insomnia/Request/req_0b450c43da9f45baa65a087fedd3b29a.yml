@@ -1,9 +1,9 @@
 _id: req_0b450c43da9f45baa65a087fedd3b29a
 type: Request
 parentId: fld_5176b508b9d043869b2e3df427bd6d43
-modified: 1605470278096
+modified: 1615300465692
 created: 1605470278096
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: newIdentity
 description: "Creates new whisper identity in the client.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_bb9de72efdd94472af7d0d4bd8589d0c
 authentication: {}
 metaSortKey: -1605470278096
 isPrivate: false

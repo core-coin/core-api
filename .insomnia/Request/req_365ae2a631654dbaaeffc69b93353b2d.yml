@@ -1,9 +1,9 @@
 _id: req_365ae2a631654dbaaeffc69b93353b2d
 type: Request
 parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
-modified: 1605470278124
+modified: 1615300294111
 created: 1605470278124
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getString
 description: "Returns string from the local database.\r
 
@@ -61,6 +61,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_c21c4d2729214ce1a99a1fd7277b1302
 authentication: {}
 metaSortKey: -1605470278124
 isPrivate: false

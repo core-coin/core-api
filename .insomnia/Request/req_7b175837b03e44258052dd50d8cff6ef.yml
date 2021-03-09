@@ -1,9 +1,9 @@
 _id: req_7b175837b03e44258052dd50d8cff6ef
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277817
+modified: 1615300820723
 created: 1605470277817
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: writeMemProfile
 description: >-
   Writes an allocation profile to the given file. Note that the profiling rate
@@ -29,6 +29,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0d2bfcedc94244549091f8a4d6bf8730
 authentication: {}
 metaSortKey: -1605470277818
 isPrivate: false

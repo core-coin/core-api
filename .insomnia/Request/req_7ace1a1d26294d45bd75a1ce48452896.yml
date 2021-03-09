@@ -1,9 +1,9 @@
 _id: req_7ace1a1d26294d45bd75a1ce48452896
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278325
+modified: 1615300042519
 created: 1605470278325
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: protocolVersion
 description: "Returns the current ethereum protocol version.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_f64f5b974a88402f93efa2a0296aa887
 authentication: {}
 metaSortKey: -1605470278325
 isPrivate: false

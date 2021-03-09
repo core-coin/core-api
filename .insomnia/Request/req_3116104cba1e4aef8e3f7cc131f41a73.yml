@@ -1,9 +1,9 @@
 _id: req_3116104cba1e4aef8e3f7cc131f41a73
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470277991
+modified: 1615300566289
 created: 1605470277991
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: peers
 description: >-
   The `peers` administrative property can be queried for all the information
@@ -37,6 +37,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_dde1367ca19b468798b2ea44ad8c04ca
 authentication: {}
 metaSortKey: -1605470277991
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_437d837ca66248eb860e5000b31ad549
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470277996
+modified: 1615300563063
 created: 1605470277996
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: nodeInfo
 description: >-
   The `nodeInfo` administrative property can be queried for all the information
@@ -37,6 +37,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_ad5a34cadaba47deb8f674cde9ffd60f
 authentication: {}
 metaSortKey: -1605470277996
 isPrivate: false

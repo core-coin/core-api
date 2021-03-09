@@ -1,9 +1,9 @@
 _id: req_1960df1eddb747ecac6dc0323a430fb3
 type: Request
 parentId: fld_b483d9a64ca24b3a951962c5fd6f7370
-modified: 1605470277905
+modified: 1615300712955
 created: 1605470277905
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: inspect
 description: >-
   The `inspect` inspection property can be queried to list a textual summary of
@@ -40,6 +40,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_3a54b3e0b3bf49ba9af4bbd722f4e8d3
 authentication: {}
 metaSortKey: -1605470277905
 isPrivate: false

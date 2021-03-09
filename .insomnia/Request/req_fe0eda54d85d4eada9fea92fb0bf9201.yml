@@ -1,9 +1,9 @@
 _id: req_fe0eda54d85d4eada9fea92fb0bf9201
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278183
+modified: 1615300234978
 created: 1605470278183
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: compileYlem
 description: "Returns compiled solidity code.\r
 
@@ -51,6 +51,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d20cd2948a6c458fbd2ed2babccb74b5
 authentication: {}
 metaSortKey: -1605470278183
 isPrivate: false

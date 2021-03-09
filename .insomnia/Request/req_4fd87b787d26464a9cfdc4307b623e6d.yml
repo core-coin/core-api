@@ -1,9 +1,9 @@
 _id: req_4fd87b787d26464a9cfdc4307b623e6d
 type: Request
 parentId: fld_4de8652689664c31936b4a40f2821ff5
-modified: 1605470277948
+modified: 1615300690292
 created: 1605470277948
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: setExtra
 description: >-
   Sets the extra data a miner can include when miner blocks. This is capped at
@@ -28,6 +28,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_6383e424550e407797f03de3a7466702
 authentication: {}
 metaSortKey: -1605470277948
 isPrivate: false

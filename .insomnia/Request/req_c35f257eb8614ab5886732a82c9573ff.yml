@@ -1,9 +1,9 @@
 _id: req_c35f257eb8614ab5886732a82c9573ff
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278260
+modified: 1615300154412
 created: 1605470278260
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: sign
 description: "The sign method calculates an Ethereum specific signature with:
   `sign(keccak256(\"\\x19Ethereum Signed Message:\\n\" + len(message) +
@@ -60,6 +60,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_17755e88d5274837a39956b13777bffc
 authentication: {}
 metaSortKey: -1605470278260
 isPrivate: false

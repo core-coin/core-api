@@ -1,9 +1,9 @@
 _id: req_cb5bfd7948bc44c2a6b0358fbaf77aac
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278311
+modified: 1615300062631
 created: 1605470278311
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: mining
 description: "Returns `true` if client is actively mining new blocks.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_7a7be1698e554a1d9e4e6a21af6e2673
 authentication: {}
 metaSortKey: -1605470278311
 isPrivate: false

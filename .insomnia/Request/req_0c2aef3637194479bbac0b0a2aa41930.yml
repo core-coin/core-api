@@ -1,9 +1,9 @@
 _id: req_0c2aef3637194479bbac0b0a2aa41930
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278284
+modified: 1615300108357
 created: 1605470278284
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getStorageAt
 description: "Returns the value from a storage position at a given address.\r
 
@@ -153,6 +153,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_99c6b7ba43754271970ba16041efcbe0
 authentication: {}
 metaSortKey: -1605470278284
 isPrivate: false

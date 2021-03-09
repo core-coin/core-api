@@ -1,9 +1,9 @@
 _id: req_4eee00b6eac84a9c8c8ebdd29cfc02ed
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277884
+modified: 1615300749269
 created: 1605470277884
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: memStats
 description: >-
   Returns detailed runtime memory statistics. See
@@ -29,6 +29,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_985cb11cefa84381885364055b7d3078
 authentication: {}
 metaSortKey: -1605470277884
 isPrivate: false

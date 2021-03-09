@@ -1,9 +1,9 @@
 _id: req_f21c8fa70cd64e8d899ef676a2e3280e
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278223
+modified: 1615300197608
 created: 1605470278223
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getTransactionByHash
 description: "Returns the information about a transaction requested by
   transaction hash.\r
@@ -100,6 +100,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_ed184fc2ef764716be4acc7694c1eed8
 authentication: {}
 metaSortKey: -1605470278223
 isPrivate: false

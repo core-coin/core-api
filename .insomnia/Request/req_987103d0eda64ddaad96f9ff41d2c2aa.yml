@@ -1,9 +1,9 @@
 _id: req_987103d0eda64ddaad96f9ff41d2c2aa
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470278000
+modified: 1615300556214
 created: 1605470278000
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: datadir
 description: >-
   The datadir administrative property can be queried for the absolute path the
@@ -34,6 +34,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_6f2454dd801d4b25b3177c0fd79857bb
 authentication: {}
 metaSortKey: -1605470278000
 isPrivate: false

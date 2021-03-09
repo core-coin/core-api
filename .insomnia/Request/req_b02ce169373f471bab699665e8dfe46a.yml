@@ -1,9 +1,9 @@
 _id: req_b02ce169373f471bab699665e8dfe46a
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278197
+modified: 1615300222893
 created: 1605470278197
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getUncleByBlockNumberAndIndex
 description: "Returns information about a uncle of a block by number and uncle
   index position.\r
@@ -63,6 +63,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_1b963244dd7644e6b1c01e1e6aca34b4
 authentication: {}
 metaSortKey: -1605470278197
 isPrivate: false

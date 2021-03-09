@@ -1,9 +1,9 @@
 _id: req_275b9982bf7940dcae96cd02d8a82d1b
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278138
+modified: 1615300280395
 created: 1605470278138
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: submitHashrate
 description: "Used for submitting mining hashrate.\r
 
@@ -59,6 +59,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_8783852aa8d4411ba0b2dd5f0e9cb658
 authentication: {}
 metaSortKey: -1605470278138
 isPrivate: false

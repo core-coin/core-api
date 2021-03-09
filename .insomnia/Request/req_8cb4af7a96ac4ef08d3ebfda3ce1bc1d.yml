@@ -1,9 +1,9 @@
 _id: req_8cb4af7a96ac4ef08d3ebfda3ce1bc1d
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278246
+modified: 1615300175824
 created: 1605470278246
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: call
 description: "Executes a new message call immediately without creating a
   transaction on the block chain.\r
@@ -79,6 +79,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_16db9b8816e14c6f9450b616099fa8a6
 authentication: {}
 metaSortKey: -1605470278246
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_dfb335a8f0954256add2368a502d0378
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277857
+modified: 1615300783933
 created: 1605470277857
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: traceBlockByNumber
 description: >-
   The `traceBlockByNumber` accepts a block number and will replay the block that
@@ -31,6 +31,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_893aea6dadf2444684dacbedae963e1d
 authentication: {}
 metaSortKey: -1605470277857
 isPrivate: false

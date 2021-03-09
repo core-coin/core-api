@@ -1,9 +1,9 @@
 _id: req_bec18302c619414abc3940ca7026d88e
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277879
+modified: 1615300756181
 created: 1605470277879
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: setHead
 description: >-
   Sets the current head of the local chain by block number.
@@ -30,6 +30,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_1e1e39b4662646e48fa1763466823b47
 authentication: {}
 metaSortKey: -1605470277879
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_fee77a928951492eaf14d200395f814a
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470278006
+modified: 1615300552653
 created: 1605470278006
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: addPeer
 description: >-
   The addPeer administrative method requests adding a new remote node to the
@@ -47,6 +47,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_40eff14748234990b9f606fa6260b066
 authentication: {}
 metaSortKey: -1605470278006
 isPrivate: false

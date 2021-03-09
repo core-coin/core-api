@@ -1,9 +1,9 @@
 _id: req_fadddf11c1e94e3994d30627b38d282d
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278302
+modified: 1615300075847
 created: 1605470278302
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: energyPrice
 description: "Returns the current price per Energy (Joules) in Ore.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_ca719108ab1241a2985e390fcfa4e6f0
 authentication: {}
 metaSortKey: -1605470278302
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_433f8489cb314ce3b23bce2b6064a10c
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278218
+modified: 1615300201615
 created: 1605470278218
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getTransactionByBlockHashAndIndex
 description: "Returns information about a transaction by block hash and
   transaction index position.\r
@@ -58,6 +58,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_aeb36111e47047549a58effa0e959a23
 authentication: {}
 metaSortKey: -1605470278218
 isPrivate: false

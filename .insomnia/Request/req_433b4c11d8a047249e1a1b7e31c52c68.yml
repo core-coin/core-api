@@ -1,9 +1,9 @@
 _id: req_433b4c11d8a047249e1a1b7e31c52c68
 type: Request
 parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
-modified: 1605470278039
+modified: 1615300512203
 created: 1605470278039
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: newAccount
 description: >-
   Generates a new private key and stores it in the key store directory. The key
@@ -34,6 +34,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_63031d666fdc43108f63301308e2ba5a
 authentication: {}
 metaSortKey: -1605470278039
 isPrivate: false

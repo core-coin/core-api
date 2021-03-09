@@ -1,9 +1,9 @@
 _id: req_8a2f2e4bde4e4c6e844a733f84a2938d
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278152
+modified: 1615300265737
 created: 1605470278152
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getLogs
 description: "Returns an array of all logs matching a given filter object.\r
 
@@ -53,6 +53,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_211c9a0a2a5a40c38bd4bcacea8f13c0
 authentication: {}
 metaSortKey: -1605470278152
 isPrivate: false

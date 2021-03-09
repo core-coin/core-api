@@ -1,9 +1,9 @@
 _id: req_ffbb1ab06de94eb497f44863dbcc4d19
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277881
+modified: 1615300752420
 created: 1605470277881
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: seedHash
 description: |-
   Fetches and retrieves the seed hash of the block by number.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_cc98db38983648c5a4baab9c0221f2d1
 authentication: {}
 metaSortKey: -1605470277881
 isPrivate: false

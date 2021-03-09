@@ -1,9 +1,9 @@
 _id: req_985cd4edf4204d7ca2c6990db4d4be54
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277840
+modified: 1615300790523
 created: 1605470277840
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: traceBlockFromFile
 description: |-
   The `traceBlockFromFile` accepts a file containing the RLP of the block.
@@ -27,6 +27,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_ece811f3492d4485afba60e547ce456f
 authentication: {}
 metaSortKey: -1605470277840
 isPrivate: false

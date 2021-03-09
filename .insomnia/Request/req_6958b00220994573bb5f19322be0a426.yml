@@ -1,9 +1,9 @@
 _id: req_6958b00220994573bb5f19322be0a426
 type: Request
 parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
-modified: 1605470278342
+modified: 1615299968027
 created: 1605470278342
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: version
 description: "Returns the current network id.\r
 
@@ -48,6 +48,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_e1e51e986bbe44e9980eb7b5c2924eae
 authentication: {}
 metaSortKey: -1605470278342
 isPrivate: false

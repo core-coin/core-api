@@ -1,9 +1,9 @@
 _id: req_e802702f16474958a0f5ccddd8e9a456
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277863
+modified: 1615300777821
 created: 1605470277863
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: stopGoTrace
 description: |-
   Stops writing the Go runtime trace.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_1500f5cd95bd40cdbbe9ac56167df22d
 authentication: {}
 metaSortKey: -1605470277863
 isPrivate: false

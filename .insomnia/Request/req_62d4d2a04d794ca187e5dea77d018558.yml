@@ -1,9 +1,9 @@
 _id: req_62d4d2a04d794ca187e5dea77d018558
 type: Request
 parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
-modified: 1605470278120
+modified: 1615300297790
 created: 1605470278120
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: putHex
 description: "Stores binary data in the local database.\r
 
@@ -68,6 +68,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0607319148084fac961687077c19f127
 authentication: {}
 metaSortKey: -1605470278120
 isPrivate: false

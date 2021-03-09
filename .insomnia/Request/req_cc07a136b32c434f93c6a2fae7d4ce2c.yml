@@ -1,9 +1,9 @@
 _id: req_cc07a136b32c434f93c6a2fae7d4ce2c
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278251
+modified: 1615300170648
 created: 1605470278251
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: sendRawTransaction
 description: "Creates new message call transaction or a contract creation for
   signed transactions.\r
@@ -53,6 +53,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d8009560c4634280b92163f42895b29b
 authentication: {}
 metaSortKey: -1605470278251
 isPrivate: false

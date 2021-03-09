@@ -1,9 +1,9 @@
 _id: req_b584540f1f804f3987bd79a662e96d67
 type: Request
 parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
-modified: 1605470278017
+modified: 1615300525879
 created: 1605470278017
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: sign
 description: >-
   The sign method calculates a Core specific signature.
@@ -46,6 +46,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0e81451d7b9541a8ad1c8f90d9ce36a3
 authentication: {}
 metaSortKey: -1605470278017
 isPrivate: false

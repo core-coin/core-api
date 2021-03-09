@@ -1,9 +1,9 @@
 _id: req_018c89a2791745d7b710e9446b02bb08
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278147
+modified: 1615300271840
 created: 1605470278147
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getWork
 description: "Returns the hash of the current block, the seedHash, and the
   boundary condition to be met (\"target\").\r
@@ -49,6 +49,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_57d098f925d64267ac0a2014f60be0d4
 authentication: {}
 metaSortKey: -1605470278147
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_5fb74a4372ca462bab316fa45cd4e125
 type: Request
 parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
-modified: 1605470278339
+modified: 1615299977756
 created: 1605470278339
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: peerCount
 description: "Returns number of peers currently connected to the client.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d55ce184b6cc4673bd838e1f7758da24
 authentication: {}
 metaSortKey: -1605470278339
 isPrivate: false

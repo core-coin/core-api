@@ -1,9 +1,9 @@
 _id: req_78d350d82e144cf391564791537606ac
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277893
+modified: 1615300734231
 created: 1605470277893
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: dumpBlock
 description: >-
   Retrieves the state that corresponds to the block number and returns a list of
@@ -28,6 +28,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_b57764757f50427780159fa949538987
 authentication: {}
 metaSortKey: -1605470277893
 isPrivate: false

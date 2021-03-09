@@ -1,9 +1,9 @@
 _id: req_cbef92e2d4364db79f0a762b10542023
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278157
+modified: 1615300261510
 created: 1605470278157
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getFilterChanges
 description: "Polling method for a filter, which returns an array of logs which
   occurred since last poll.\r
@@ -113,6 +113,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_338dff5d09cf4c51a4e0a6bee0ddcce1
 authentication: {}
 metaSortKey: -1605470278157
 isPrivate: false

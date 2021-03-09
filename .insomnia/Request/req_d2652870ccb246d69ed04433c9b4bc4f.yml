@@ -1,9 +1,9 @@
 _id: req_d2652870ccb246d69ed04433c9b4bc4f
 type: Request
 parentId: fld_b483d9a64ca24b3a951962c5fd6f7370
-modified: 1605470277908
+modified: 1615300709803
 created: 1605470277908
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: content
 description: >-
   The `content` inspection property can be queried to list the exact details of
@@ -38,6 +38,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_4a0dd505fe8c4b79a5633ca3402d1b49
 authentication: {}
 metaSortKey: -1605470277908
 isPrivate: false

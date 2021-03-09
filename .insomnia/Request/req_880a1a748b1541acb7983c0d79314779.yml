@@ -1,9 +1,9 @@
 _id: req_880a1a748b1541acb7983c0d79314779
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278266
+modified: 1615300147651
 created: 1605470278266
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getCode
 description: "Returns code at a given address.\r
 
@@ -58,6 +58,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_6602709a913c4102b1b8bc88a9204cdf
 authentication: {}
 metaSortKey: -1605470278266
 isPrivate: false

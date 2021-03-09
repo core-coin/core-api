@@ -1,9 +1,9 @@
 _id: req_6b3e2c68db9a407d8900c19c366b373c
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277860
+modified: 1615300780868
 created: 1605470277860
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: traceBlock
 description: >-
   The `traceBlock` method will return a full stack trace of all invoked opcodes
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_83929b178c0e444680143c0e7b7a0368
 authentication: {}
 metaSortKey: -1605470277860
 isPrivate: false

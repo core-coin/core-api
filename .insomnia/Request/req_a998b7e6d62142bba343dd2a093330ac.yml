@@ -1,9 +1,9 @@
 _id: req_a998b7e6d62142bba343dd2a093330ac
 type: Request
 parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
-modified: 1605470278129
+modified: 1615300290927
 created: 1605470278129
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: putString
 description: "Stores a string in the local database.\r
 
@@ -68,6 +68,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_83ade7eba79240d8af0b0661c87b6303
 authentication: {}
 metaSortKey: -1605470278129
 isPrivate: false

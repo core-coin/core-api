@@ -1,9 +1,9 @@
 _id: req_07961bf82e3448b59a7fdfc25c033cec
 type: Request
 parentId: fld_5176b508b9d043869b2e3df427bd6d43
-modified: 1605470278106
+modified: 1615300308316
 created: 1605470278106
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: version
 description: "Returns the current whisper protocol version.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_47da0e0f2eb74b43925e033a6a08536f
 authentication: {}
 metaSortKey: -1605470278106
 isPrivate: false

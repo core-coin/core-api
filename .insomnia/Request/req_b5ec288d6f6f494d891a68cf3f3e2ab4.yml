@@ -1,9 +1,9 @@
 _id: req_b5ec288d6f6f494d891a68cf3f3e2ab4
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278315
+modified: 1615300056261
 created: 1605470278315
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: coinbase
 description: "Returns the client coinbase address.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0e463d86cd6140e18c1e545364ebea90
 authentication: {}
 metaSortKey: -1605470278315
 isPrivate: false

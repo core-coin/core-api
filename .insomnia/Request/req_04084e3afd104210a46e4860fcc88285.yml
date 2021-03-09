@@ -1,9 +1,9 @@
 _id: req_04084e3afd104210a46e4860fcc88285
 type: Request
 parentId: fld_5176b508b9d043869b2e3df427bd6d43
-modified: 1605470278074
+modified: 1615300480545
 created: 1605470278074
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: newFilter
 description: "Creates filter to notify, when client receives whisper message
   matching the filter options.\r
@@ -81,6 +81,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0b8e9f3f2d144000bc7c31d396fab144
 authentication: {}
 metaSortKey: -1605470278074
 isPrivate: false

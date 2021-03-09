@@ -1,9 +1,9 @@
 _id: req_8e95c28cbb714b8da84a58687a5b0d8d
 type: Request
 parentId: fld_4de8652689664c31936b4a40f2821ff5
-modified: 1605470277943
+modified: 1615300693449
 created: 1605470277943
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: setEnergyPrice
 description: >-
   Sets the minimal accepted energy price when mining transactions. Any
@@ -28,6 +28,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_25b03a07226245e0bd0b637c31c3e642
 authentication: {}
 metaSortKey: -1605470277943
 isPrivate: false

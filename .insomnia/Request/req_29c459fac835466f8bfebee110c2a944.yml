@@ -1,9 +1,9 @@
 _id: req_29c459fac835466f8bfebee110c2a944
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277874
+modified: 1615300762842
 created: 1605470277874
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: stacks
 description: >-
   Returns a printed representation of the stacks of all goroutines. Note that
@@ -29,6 +29,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_62ba1be7d8dc43d5a463b35addf7d05b
 authentication: {}
 metaSortKey: -1605470277874
 isPrivate: false

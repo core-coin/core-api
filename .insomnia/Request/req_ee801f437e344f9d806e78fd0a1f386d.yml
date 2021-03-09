@@ -1,9 +1,9 @@
 _id: req_ee801f437e344f9d806e78fd0a1f386d
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278279
+modified: 1615300114717
 created: 1605470278279
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getTransactionCount
 description: "Returns the number of transactions sent from an address.\r
 
@@ -58,6 +58,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_98a162f89a32411995b20d5b8d413c1a
 authentication: {}
 metaSortKey: -1605470278279
 isPrivate: false

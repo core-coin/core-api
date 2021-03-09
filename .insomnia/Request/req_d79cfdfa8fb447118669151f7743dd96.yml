@@ -1,9 +1,9 @@
 _id: req_d79cfdfa8fb447118669151f7743dd96
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278288
+modified: 1615300101614
 created: 1605470278288
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getBalance
 description: "Returns the balance of the account of given address.\r
 
@@ -58,6 +58,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d415f6fdc9714002a5a3b228186b15f9
 authentication: {}
 metaSortKey: -1605470278288
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_d2234457df75480c9a71d9cacbba5f0b
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278227
+modified: 1615300189396
 created: 1605470278227
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getBlockByNumber
 description: "Returns information about a block by block number.\r
 
@@ -59,6 +59,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_97be3aa6b0de4da7a7581a447fc9b4af
 authentication: {}
 metaSortKey: -1605470278227
 isPrivate: false

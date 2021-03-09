@@ -1,9 +1,9 @@
 _id: req_ee43502cca2641d4aa20bc2d95b5954d
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277894
+modified: 1615300731121
 created: 1605470277894
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: cpuProfile
 description: |-
   Turns on CPU profiling for the given duration and writes profile data to disk.
@@ -27,6 +27,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d08bf069aee741f6bc0e294d99f1f067
 authentication: {}
 metaSortKey: -1605470277894
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_a2ce62a7b668423d806c5c36436cd6d4
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277844
+modified: 1615300787067
 created: 1605470277844
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: traceBlockByHash
 description: >-
   The `traceBlockByHash` accepts a block hash and will replay the block that is
@@ -33,6 +33,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_c5b51202559f48618d4bef18d509deb1
 authentication: {}
 metaSortKey: -1605470277844
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_a3d35277662c4d0da82360a2cb5c7db7
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278241
+modified: 1615300179416
 created: 1605470278241
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: estimateEnergy
 description: "Generates and returns an estimate of how much energy is necessary
   to allow the transaction to complete. The transaction will not be added to the
@@ -45,6 +45,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_4136f936f554472abaff8d1a2577a837
 authentication: {}
 metaSortKey: -1605470278241
 isPrivate: false

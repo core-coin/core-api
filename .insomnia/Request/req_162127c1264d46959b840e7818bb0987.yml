@@ -1,9 +1,9 @@
 _id: req_162127c1264d46959b840e7818bb0987
 type: Request
 parentId: fld_4de8652689664c31936b4a40f2821ff5
-modified: 1605470277931
+modified: 1615300700293
 created: 1605470277931
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: stop
 description: |-
   Stop the CPU mining operation.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_c79cf9e26d0648e29b490d5483b35a57
 authentication: {}
 metaSortKey: -1605470277931
 isPrivate: false

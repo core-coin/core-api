@@ -1,9 +1,9 @@
 _id: req_e9b086cd0f554f7e815461f7fd328a24
 type: Request
 parentId: fld_e10bc411ab0447e2a2ce6dfaec162b2a
-modified: 1605470278357
+modified: 1615299935719
 created: 1605470278357
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: clientVersion
 description: "Returns the current client version.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_71758d4c2f654996beb064dbb412a58b
 authentication: {}
 metaSortKey: -1605470278357
 isPrivate: false

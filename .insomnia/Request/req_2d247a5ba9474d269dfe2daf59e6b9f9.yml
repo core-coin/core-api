@@ -1,9 +1,9 @@
 _id: req_2d247a5ba9474d269dfe2daf59e6b9f9
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470277986
+modified: 1615300569376
 created: 1605470277986
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: setSolc
 description: >-
   The `setSolc` administrative method sets the Ylem compiler path to be used by
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_cc1f98eefe8e423b9bd6f4f5e42ffabe
 authentication: {}
 metaSortKey: -1605470277986
 isPrivate: false

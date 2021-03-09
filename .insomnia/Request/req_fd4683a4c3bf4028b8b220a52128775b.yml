@@ -1,9 +1,9 @@
 _id: req_fd4683a4c3bf4028b8b220a52128775b
 type: Request
 parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
-modified: 1605470278044
+modified: 1615300508296
 created: 1605470278044
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: listAccounts
 description: |-
   Returns all the Core account addresses of all keys in the key store.
@@ -29,6 +29,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_b0442d3b53fc4b5a8776646a424458ab
 authentication: {}
 metaSortKey: -1605470278044
 isPrivate: false

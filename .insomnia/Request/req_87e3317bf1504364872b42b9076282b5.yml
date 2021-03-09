@@ -1,9 +1,9 @@
 _id: req_87e3317bf1504364872b42b9076282b5
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278275
+modified: 1615300121291
 created: 1605470278275
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getBlockTransactionCountByHash
 description: "Returns the number of transactions in a block from a block
   matching the given block hash.\r
@@ -51,6 +51,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_c03ba9ee11da4a85a0558119905bfcd3
 authentication: {}
 metaSortKey: -1605470278275
 isPrivate: false

@@ -1,9 +1,9 @@
 _id: req_fd683ef81f47491b970c2b7234a1390b
 type: Request
 parentId: fld_b483d9a64ca24b3a951962c5fd6f7370
-modified: 1605470277903
+modified: 1615300716160
 created: 1605470277903
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: status
 description: >-
   The `status` inspection property can be queried for the number of transactions
@@ -35,6 +35,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_3de92f9602684acaa23c7107f7dc0df7
 authentication: {}
 metaSortKey: -1605470277903
 isPrivate: false

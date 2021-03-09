@@ -1,9 +1,9 @@
 _id: req_0b236e78a78e44ebb2ac65c2982b968b
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278161
+modified: 1615300257397
 created: 1605470278161
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: uninstallFilter
 description: "Uninstalls a filter with given id. Should always be called when
   watch is no longer needed. Additonally Filters timeout when they aren't
@@ -53,6 +53,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_f4454b5a379849828347cc16015a0007
 authentication: {}
 metaSortKey: -1605470278161
 isPrivate: false

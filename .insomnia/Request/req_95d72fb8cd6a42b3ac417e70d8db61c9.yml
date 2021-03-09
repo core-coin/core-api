@@ -1,9 +1,9 @@
 _id: req_95d72fb8cd6a42b3ac417e70d8db61c9
 type: Request
 parentId: fld_4de8652689664c31936b4a40f2821ff5
-modified: 1605470277925
+modified: 1615300703649
 created: 1605470277925
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: setCoreBase
 description: |-
   Sets the corebase, where mining rewards will go.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_da663c27888349e184e13bc5e1824c51
 authentication: {}
 metaSortKey: -1605470277925
 isPrivate: false

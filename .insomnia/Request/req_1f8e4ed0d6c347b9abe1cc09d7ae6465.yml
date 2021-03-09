@@ -1,9 +1,9 @@
 _id: req_1f8e4ed0d6c347b9abe1cc09d7ae6465
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277866
+modified: 1615300774509
 created: 1605470277866
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: startGoTrace
 description: |-
   Starts writing a Go runtime trace to the given file.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_d11733a2522c4c5db8eefd00b616d08e
 authentication: {}
 metaSortKey: -1605470277866
 isPrivate: false

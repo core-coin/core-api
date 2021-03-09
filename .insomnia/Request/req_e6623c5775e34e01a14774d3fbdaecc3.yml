@@ -1,9 +1,9 @@
 _id: req_e6623c5775e34e01a14774d3fbdaecc3
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277889
+modified: 1615300742604
 created: 1605470277889
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getBlockRlp
 description: |-
   Retrieves and returns the RLP encoded block by number.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_65d87483c7cd4f0e8a695b71c0ff568c
 authentication: {}
 metaSortKey: -1605470277889
 isPrivate: false

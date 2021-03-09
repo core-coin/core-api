@@ -1,9 +1,9 @@
 _id: req_c50273f7a4ba4b9881343f58af9ab6da
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278192
+modified: 1615300227228
 created: 1605470278192
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getCompilers
 description: "Returns a list of available compilers in the client.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_84547f91727648c3ad7da5d0bfb50f16
 authentication: {}
 metaSortKey: -1605470278192
 isPrivate: false

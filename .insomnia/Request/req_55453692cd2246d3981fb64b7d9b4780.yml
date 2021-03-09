@@ -1,9 +1,9 @@
 _id: req_55453692cd2246d3981fb64b7d9b4780
 type: Request
 parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
-modified: 1605470278113
+modified: 1615300301748
 created: 1605470278113
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getHex
 description: "Returns binary data from the local database.\r
 
@@ -61,6 +61,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_0a730a60f2e94be880a43f4f20396f06
 authentication: {}
 metaSortKey: -1605470278113
 isPrivate: false

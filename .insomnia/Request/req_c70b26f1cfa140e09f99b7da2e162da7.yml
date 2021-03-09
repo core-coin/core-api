@@ -1,9 +1,9 @@
 _id: req_c70b26f1cfa140e09f99b7da2e162da7
 type: Request
 parentId: fld_2eb313939ed94036abf2c76b0e41070a
-modified: 1605470277966
+modified: 1615300680729
 created: 1605470277966
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: startWS
 description: >-
   The `startWS` administrative method starts an WebSocket based JSON RPC API
@@ -48,6 +48,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_91ba33e1e88049f2a9c2b14685ffebd5
 authentication: {}
 metaSortKey: -1605470277966
 isPrivate: false

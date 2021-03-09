@@ -1,9 +1,9 @@
 _id: req_ef9b29230a804802b9fe1ef0c41eaee2
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278176
+modified: 1615300243393
 created: 1605470278176
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: newFilter
 description: "Creates a filter object, based on filter options, to notify when
   the state changes (logs). To check if the state has changed, call
@@ -118,6 +118,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_17d416cd4b874dfa8c13a55662a44096
 authentication: {}
 metaSortKey: -1605470278176
 isPrivate: false

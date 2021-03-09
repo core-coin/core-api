@@ -1,9 +1,9 @@
 _id: req_40119f07c7ba415093423507e3e2b4d3
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277891
+modified: 1615300738376
 created: 1605470277891
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: gcStats
 description: >-
   Returns GC statistics. See
@@ -29,6 +29,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_3a75fdf9e8ea4b72bc7316b88e42fb11
 authentication: {}
 metaSortKey: -1605470277891
 isPrivate: false

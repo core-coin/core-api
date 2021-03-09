@@ -1,11 +1,28 @@
 _id: env_9628a3a042275a6bcc7b4b6f7848db189d3bda4c
 type: Environment
 parentId: wrk_7d8533f3d58b4ec2bf9aad5b84749e91
-modified: 1605470282894
+modified: 1615299635912
 created: 1605470282894
 name: Base Environment
-data: {}
-dataPropertyOrder: null
+data:
+  ENODE: enode://
+  EXAMPLE_ADDRESS_CB: cb540000000000000000000000000000000000000000
+  EXAMPLE_HEX: "0xC0DE"
+  EXAMPLE_STRING: exampleblockchain
+  FILE_LOCATION: ./examprofile.txt
+  NETWORK_ID: 1
+  NETWORK_NAME: mainnet
+  URL: http://localhost:8545
+dataPropertyOrder:
+  "&":
+    - ENODE
+    - EXAMPLE_ADDRESS_CB
+    - EXAMPLE_HEX
+    - EXAMPLE_STRING
+    - FILE_LOCATION
+    - NETWORK_ID
+    - NETWORK_NAME
+    - URL
 color: null
 isPrivate: false
 metaSortKey: 1605470282894

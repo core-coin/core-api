@@ -1,9 +1,9 @@
 _id: req_88ea6aac73da4bdeb13b6da709f64996
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277834
+modified: 1615300793515
 created: 1605470277834
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: traceTransaction
 description: >-
   The `traceTransaction` debugging method will attempt to run the transaction in
@@ -51,6 +51,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_587849fe7c564b9eb08b467f2dc1422a
 authentication: {}
 metaSortKey: -1605470277834
 isPrivate: false

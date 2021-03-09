@@ -1,9 +1,9 @@
 _id: req_2dda48e786424fafa95489b6f2e5156a
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278207
+modified: 1615300214366
 created: 1605470278207
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: getTransactionReceipt
 description: "Returns the receipt of a transaction by transaction hash.\r
 
@@ -111,6 +111,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_4090eb51a6c34ff0b0909f03019b7b9c
 authentication: {}
 metaSortKey: -1605470278207
 isPrivate: false

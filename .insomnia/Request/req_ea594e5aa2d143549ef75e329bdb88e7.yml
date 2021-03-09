@@ -1,9 +1,9 @@
 _id: req_ea594e5aa2d143549ef75e329bdb88e7
 type: Request
 parentId: fld_4de8652689664c31936b4a40f2821ff5
-modified: 1605470277937
+modified: 1615300696873
 created: 1605470277937
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: start
 description: |-
   Start the CPU mining process with the given number of threads.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_874745c07ac94b57918938cc8fc6094c
 authentication: {}
 metaSortKey: -1605470277937
 isPrivate: false

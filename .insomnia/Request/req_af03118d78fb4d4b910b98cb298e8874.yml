@@ -1,9 +1,9 @@
 _id: req_af03118d78fb4d4b910b98cb298e8874
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278171
+modified: 1615300249122
 created: 1605470278171
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: newBlockFilter
 description: "Creates a filter in the node, to notify when a new block arrives.
   To check if the state has changed, call `xcb_getFilterChanges`.\r
@@ -37,6 +37,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_73a268f1e2434d5289b3f48747e5fc27
 authentication: {}
 metaSortKey: -1605470278171
 isPrivate: false

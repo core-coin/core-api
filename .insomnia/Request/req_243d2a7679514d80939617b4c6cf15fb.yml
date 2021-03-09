@@ -1,9 +1,9 @@
 _id: req_243d2a7679514d80939617b4c6cf15fb
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278306
+modified: 1615300068973
 created: 1605470278306
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: hashrate
 description: "Returns the number of hashes per second that the node is mining
   with.\r
@@ -37,6 +37,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_7db33c11462e4f5caaa78d5bd9eeeece
 authentication: {}
 metaSortKey: -1605470278306
 isPrivate: false

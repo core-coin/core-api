@@ -1,9 +1,9 @@
 _id: req_4a683eaa6ad54d2886c6d2fd0b2a9da5
 type: Request
 parentId: fld_27694d74b1954c9681f056327110f15b
-modified: 1605470277822
+modified: 1615300816509
 created: 1605470277822
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: writeBlockProfile
 description: |-
   Writes a goroutine blocking profile to the given file.
@@ -25,6 +25,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_08c9c677d24d441db0c97969337d48b0
 authentication: {}
 metaSortKey: -1605470277822
 isPrivate: false

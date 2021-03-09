@@ -1,9 +1,9 @@
 _id: req_4a8a14f85e1f40d588c283c763d924a1
 type: Request
 parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
-modified: 1605470278298
+modified: 1615300083529
 created: 1605470278298
-url: "{{ENVIRONMENT}}"
+url: "{{ _.URL }}"
 name: accounts
 description: "Returns a list of addresses owned by client.\r
 
@@ -36,6 +36,7 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
+    id: pair_495df9ab2a4b4d34ac8d61d1e32e1916
 authentication: {}
 metaSortKey: -1605470278298
 isPrivate: false
