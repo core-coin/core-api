@@ -1,0 +1,124 @@
+_id: req_cbef92e2d4364db79f0a762b10542023
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278157
+created: 1605470278157
+url: "{{ENVIRONMENT}}"
+name: getFilterChanges
+description: "Polling method for a filter, which returns an array of logs which
+  occurred since last poll.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY` - the filter id.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0x16\" // 22\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `ARRAY` - Array of log objects, or an empty array if nothing has changed
+  since last poll.\r
+
+  \r
+
+  For filters created with `xcb_newBlockFilter` the return are block hashes
+  (`DATA`, 32 Bytes), e.g. `[\"0x3454645634534...\"]`.\r
+
+  \r
+
+  For filters created with `xcb_newPendingTransactionFilter` the return are
+  transaction hashes (`DATA`, 32 Bytes), e.g. `[\"0x6345343454645...\"]`.\r
+
+  \r
+
+  For filters created with `xcb_newFilter` logs are objects with following
+  params:\r
+
+  \r
+
+  `removed`: `TAG` - true when the log was removed, due to a chain
+  reorganization. false if its a valid log.\r
+
+  \r
+
+  `logIndex`: `QUANTITY` - integer of the log index position in the block.
+  `null` when its pending log.\r
+
+  \r
+
+  `transactionIndex`: `QUANTITY` - integer of the transactions index position
+  log was created from. `null` when its pending log.\r
+
+  \r
+
+  `transactionHash`: `DATA`, 32 Bytes - hash of the transactions this log was
+  created from. `null` when its pending log.\r
+
+  \r
+
+  `blockHash`: `DATA`, 32 Bytes - hash of the block where this log was in.
+  `null` when its pending. `null` when its pending log.\r
+
+  \r
+
+  `blockNumber`: `QUANTITY` - the block number where this log was in. `null`
+  when its pending. `null` when its pending log.\r
+
+  \r
+
+  `address`: `DATA`, 24 Bytes - address from which this log originated.\r
+
+  \r
+
+  `data`: `DATA` - contains one or more 32 Bytes non-indexed arguments of the
+  log.\r
+
+  \r
+
+  `topics`: `ARRAY of DATA` - Array of 0 to 4 32 Bytes DATA of indexed log
+  arguments. (In Ylem: The first topic is the hash of the signature of the event
+  (e.g. `Deposit(address,bytes32,uint256)`), except you declared the event with
+  the anonymous specifier.)"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getFilterChanges",
+    	"params":[
+    		"0x16"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278157
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

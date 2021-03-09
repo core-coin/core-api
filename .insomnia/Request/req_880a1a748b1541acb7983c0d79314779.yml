@@ -1,0 +1,69 @@
+_id: req_880a1a748b1541acb7983c0d79314779
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278266
+created: 1605470278266
+url: "{{ENVIRONMENT}}"
+name: getCode
+description: "Returns code at a given address.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 20 Bytes - address\r
+
+  \r
+
+  `QUANTITY|TAG` - integer block number, or the string `\"latest\"`,
+  `\"earliest\"` or `\"pending\"`, see the default block parameter\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   ' 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b',\r
+
+  \   '0x2'  // 2\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `DATA` - the code from the given address."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getCode",
+    	"params":[
+    		"0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b", 
+    		"0x2"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278266
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

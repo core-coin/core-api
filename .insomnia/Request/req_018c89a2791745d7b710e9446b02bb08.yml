@@ -1,0 +1,60 @@
+_id: req_018c89a2791745d7b710e9446b02bb08
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278147
+created: 1605470278147
+url: "{{ENVIRONMENT}}"
+name: getWork
+description: "Returns the hash of the current block, the seedHash, and the
+  boundary condition to be met (\"target\").\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `ARRAY` - Array with the following properties:\r
+
+  \r
+
+  `DATA`, 32 Bytes - Current block header pow-hash.\r
+
+  \r
+
+  `DATA`, 32 Bytes - The seed hash used.\r
+
+  \r
+
+  `DATA`, 32 Bytes - The boundary condition (\"target\"), 2^256 / difficulty."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getWork",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278147
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

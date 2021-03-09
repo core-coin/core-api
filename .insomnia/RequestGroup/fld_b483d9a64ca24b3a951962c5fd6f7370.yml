@@ -1,0 +1,12 @@
+_id: fld_b483d9a64ca24b3a951962c5fd6f7370
+type: RequestGroup
+parentId: fld_daf1d40b10fd473fa0453862d754833b
+modified: 1605470277910
+created: 1605470277910
+name: txpool
+description: The txpool API gives you access to several non-standard RPC methods
+  to inspect the contents of the transaction pool containing all the currently
+  pending transactions as well as the ones queued for future processing.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1605470277910

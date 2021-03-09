@@ -1,0 +1,70 @@
+_id: req_d2234457df75480c9a71d9cacbba5f0b
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278227
+created: 1605470278227
+url: "{{ENVIRONMENT}}"
+name: getBlockByNumber
+description: "Returns information about a block by block number.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY|TAG` - integer of a block number, or the string `\"earliest\"`,
+  `\"latest\"` or `\"pending\"`, as in the default block parameter.\r
+
+  \r
+
+  `BOOLEAN` - If `true` it returns the full transaction objects, if `false`
+  only the hashes of the transactions.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0x1b4', // 436\r
+
+  \   true\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getBlockByHash`"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getBlockByNumber",
+    	"params":[
+    		"0x1b4", 
+    		true
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278227
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,12 @@
+_id: fld_2eb313939ed94036abf2c76b0e41070a
+type: RequestGroup
+parentId: fld_daf1d40b10fd473fa0453862d754833b
+modified: 1605470278012
+created: 1605470278012
+name: admin
+description: The admin API gives you access to several non-standard RPC methods,
+  which will allow you to have a fine grained control over your instance,
+  including but not limited to network peer and RPC endpoint management.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1605470278012

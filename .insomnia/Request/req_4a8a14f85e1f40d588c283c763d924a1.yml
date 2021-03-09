@@ -1,0 +1,47 @@
+_id: req_4a8a14f85e1f40d588c283c763d924a1
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278298
+created: 1605470278298
+url: "{{ENVIRONMENT}}"
+name: accounts
+description: "Returns a list of addresses owned by client.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `ARRAY`, 24 Bytes - Addresses owned by the client."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_accounts",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278298
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

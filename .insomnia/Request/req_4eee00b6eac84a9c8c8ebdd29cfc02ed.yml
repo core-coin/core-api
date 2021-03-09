@@ -1,0 +1,40 @@
+_id: req_4eee00b6eac84a9c8c8ebdd29cfc02ed
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277884
+created: 1605470277884
+url: "{{ENVIRONMENT}}"
+name: memStats
+description: >-
+  Returns detailed runtime memory statistics. See
+  [MemStats](https://golang.org/pkg/runtime/#MemStats) for information about the
+  fields of the returned object.
+
+
+  **Parameters**
+
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_memStats",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277884
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

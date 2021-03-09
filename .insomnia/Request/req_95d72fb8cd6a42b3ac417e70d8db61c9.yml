@@ -1,0 +1,36 @@
+_id: req_95d72fb8cd6a42b3ac417e70d8db61c9
+type: Request
+parentId: fld_4de8652689664c31936b4a40f2821ff5
+modified: 1605470277925
+created: 1605470277925
+url: "{{ENVIRONMENT}}"
+name: setCoreBase
+description: |-
+  Sets the corebase, where mining rewards will go.
+
+  **Parameters**
+
+  `HEX` - Core address for corebase.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"setCorebase",
+    	"params":["{{EXAMPLE_ADDRESS_CB}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277925
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

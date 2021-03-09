@@ -1,0 +1,70 @@
+_id: req_275b9982bf7940dcae96cd02d8a82d1b
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278138
+created: 1605470278138
+url: "{{ENVIRONMENT}}"
+name: submitHashrate
+description: "Used for submitting mining hashrate.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `Hashrate`, A hexadecimal string representation (32 bytes) of the hash
+  rate.\r
+
+  \r
+
+  `ID`, String - A random hexadecimal(32 bytes) ID identifying the client.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0x0000000000000000000000000000000000000000000000000000000000500000\",\r
+
+  \  \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `Boolean` - Returns `true` if submitting went through succesfully and
+  `false` otherwise."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0", 
+    	"method":"xcb_submitHashrate", 
+    	"params":[
+    		"0x0000000000000000000000000000000000000000000000000000000000500000", 
+    		"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278138
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,48 @@
+_id: req_243d2a7679514d80939617b4c6cf15fb
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278306
+created: 1605470278306
+url: "{{ENVIRONMENT}}"
+name: hashrate
+description: "Returns the number of hashes per second that the node is mining
+  with.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - Number of hashes per second."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_hashrate",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278306
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

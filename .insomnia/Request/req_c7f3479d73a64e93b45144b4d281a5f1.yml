@@ -1,0 +1,49 @@
+_id: req_c7f3479d73a64e93b45144b4d281a5f1
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278167
+created: 1605470278167
+url: "{{ENVIRONMENT}}"
+name: newPendingTransactionFilter
+description: "Creates a filter in the node, to notify when new pending
+  transactions arrive. To check if the state has changed, call
+  `xcb_getFilterChanges`.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  None\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - A filter id."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_newPendingTransactionFilter",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278167
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

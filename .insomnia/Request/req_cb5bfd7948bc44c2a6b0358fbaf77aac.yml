@@ -1,0 +1,47 @@
+_id: req_cb5bfd7948bc44c2a6b0358fbaf77aac
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278311
+created: 1605470278311
+url: "{{ENVIRONMENT}}"
+name: mining
+description: "Returns `true` if client is actively mining new blocks.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - returns `true` of the client is mining, otherwise `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_mining",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278311
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

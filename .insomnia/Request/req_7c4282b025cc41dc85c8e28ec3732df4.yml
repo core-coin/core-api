@@ -1,0 +1,156 @@
+_id: req_7c4282b025cc41dc85c8e28ec3732df4
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278232
+created: 1605470278232
+url: "{{ENVIRONMENT}}"
+name: getBlockByHash
+description: "Returns information about a block by hash.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - Hash of a block.\r
+
+  \r
+
+  `BOOLEAN` - If true it returns the full transaction objects, if false only
+  the hashes of the transactions.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331',\r
+
+  \   true\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `OBJECT` - A block object, or null when no block was found:\r
+
+  \r
+
+  `number`: `QUANTITY` - the block number. null when its pending block.\r
+
+  \r
+
+  `hash`: `DATA`, 32 Bytes - hash of the block. `null` when its pending
+  block.\r
+
+  \r
+
+  `parentHash`: `DATA`, 32 Bytes - hash of the parent block.\r
+
+  \r
+
+  `nonce`: `DATA`, 8 Bytes - hash of the generated proof-of-work. `null` when
+  its pending block.\r
+
+  \r
+
+  `sha3Uncles`: `DATA`, 32 Bytes - SHA3 of the uncles data in the block.\r
+
+  \r
+
+  `logsBloom`: `DATA`, 256 Bytes - the bloom filter for the logs of the block.
+  `null` when its pending block.\r
+
+  \r
+
+  `transactionsRoot`: `DATA`, 32 Bytes - the root of the transaction trie of
+  the block.\r
+
+  \r
+
+  `stateRoot`: `DATA`, 32 Bytes - the root of the final state trie of the
+  block.\r
+
+  \r
+
+  `receiptsRoot`: `DATA`, 32 Bytes - the root of the receipts trie of the
+  block.\r
+
+  \r
+
+  `miner`: `DATA`, 20 Bytes - the address of the beneficiary to whom the
+  mining rewards were given.\r
+
+  \r
+
+  `difficulty`: `QUANTITY` - integer of the difficulty for this block.\r
+
+  \r
+
+  `totalDifficulty`: `QUANTITY` - integer of the total difficulty of the chain
+  until this block.\r
+
+  \r
+
+  `extraData`: `DATA` - the \"extra data\" field of this block.\r
+
+  \r
+
+  `size`: `QUANTITY` - integer the size of this block in bytes.\r
+
+  \r
+
+  `energyLimit`: `QUANTITY` - the maximum energy allowed in this block.\r
+
+  \r
+
+  `energyUsed`: `QUANTITY` - the total used energy by all transactions in this
+  block.\r
+
+  \r
+
+  `timestamp`: `QUANTITY` - the unix timestamp for when the block was
+  collated.\r
+
+  \r
+
+  `transactions`: `Array` - Array of transaction objects, or 32 Bytes
+  transaction hashes depending on the last given parameter.\r
+
+  \r
+
+  `uncles`: `Array` - Array of uncle hashes."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getBlockByHash",
+    	"params":[
+    		"0xad1328d13f833b8af722117afdc406a762033321df8e48c00cd372d462f48169", 
+    		true
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278232
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,48 @@
+_id: req_af03118d78fb4d4b910b98cb298e8874
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278171
+created: 1605470278171
+url: "{{ENVIRONMENT}}"
+name: newBlockFilter
+description: "Creates a filter in the node, to notify when a new block arrives.
+  To check if the state has changed, call `xcb_getFilterChanges`.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  None\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - A filter id."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_newBlockFilter",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278171
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

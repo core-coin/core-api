@@ -1,0 +1,72 @@
+_id: req_55453692cd2246d3981fb64b7d9b4780
+type: Request
+parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
+modified: 1605470278113
+created: 1605470278113
+url: "{{ENVIRONMENT}}"
+name: getHex
+description: "Returns binary data from the local database.\r
+
+  \r
+
+  **Note:** This function is deprecated and will be removed in the future.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `String` - Database name.\r
+
+  \r
+
+  `String` - Key name.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"testDB\",\r
+
+  \  \"myKey\",\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `DATA` - The previously stored data."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"db_getHex"
+    	,"params":[
+    		"testDB",
+    		"testKey"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278113
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,42 @@
+_id: req_dfb335a8f0954256add2368a502d0378
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277857
+created: 1605470277857
+url: "{{ENVIRONMENT}}"
+name: traceBlockByNumber
+description: >-
+  The `traceBlockByNumber` accepts a block number and will replay the block that
+  is already present in the database.
+
+
+  **Parameters**
+
+
+  `NUMBER` - Block number.
+
+
+  `OBJECT` - Options.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_traceBlockByNumber",
+    	"params":[1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277857
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

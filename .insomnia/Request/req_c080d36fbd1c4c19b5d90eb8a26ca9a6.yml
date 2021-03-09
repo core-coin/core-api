@@ -1,0 +1,42 @@
+_id: req_c080d36fbd1c4c19b5d90eb8a26ca9a6
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277828
+created: 1605470277828
+url: "{{ENVIRONMENT}}"
+name: verbosity
+description: >-
+  Sets the logging verbosity ceiling. Log messages with level up to and
+  including the given level will be printed.
+
+
+  The verbosity of individual packages and source files can be raised using `debug_vmodule`.
+
+
+  **Parameters**
+
+
+  `NUMBER` - Verbosity level.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_verbosity",
+    	"params":[1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277828
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

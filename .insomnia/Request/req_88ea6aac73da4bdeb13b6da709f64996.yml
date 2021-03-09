@@ -1,0 +1,62 @@
+_id: req_88ea6aac73da4bdeb13b6da709f64996
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277834
+created: 1605470277834
+url: "{{ENVIRONMENT}}"
+name: traceTransaction
+description: >-
+  The `traceTransaction` debugging method will attempt to run the transaction in
+  the exact same manner as it was executed on the network. It will replay any
+  transaction that may have been executed prior to this one before it will
+  finally attempt to execute the transaction that corresponds to the given hash.
+
+
+  In addition to the hash of the transaction you may give it a secondary optional argument, which specifies the options for this specific call.
+
+
+  **Parameters**
+
+
+  `BOOLEAN` - `disableStorage` Setting this to true will disable storage capture (default = false).
+
+
+  `BOOLEAN` - `disableMemory` Setting this to true will disable memory capture (default = false).
+
+
+  `BOOLEAN` - `disableStack` Setting this to true will disable stack capture (default = false).
+
+
+  `STRING` - `tracer` Setting this will enable JavaScript-based transaction tracing, described below. If set, the previous four arguments will be ignored.
+
+
+  `STRING` - `timeout` Overrides the default timeout of 5 seconds for JavaScript-based tracing calls. Valid values are described [here](https://golang.org/pkg/time/#ParseDuration).
+method: POST
+body:
+  mimeType: ""
+  text: >-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_traceTransaction",
+    	"params":[
+            "0x2059dd53ecac9827faad14d364f9e04b1d5fe5b506e3acc886eff7a6f88a696a",
+            {
+                "energy": 85301,
+                "returnValue": ""
+            }
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277834
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

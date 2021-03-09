@@ -1,0 +1,48 @@
+_id: req_3addfdae8a3f40b4a89b0bcbcabc1d9b
+type: Request
+parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
+modified: 1605470278335
+created: 1605470278335
+url: "{{ENVIRONMENT}}"
+name: listening
+description: "Returns `true` if client is actively listening for network
+  connections.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `Boolean` - `true` when listening, otherwise `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"net_listening",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278335
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

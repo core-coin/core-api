@@ -1,0 +1,40 @@
+_id: req_40119f07c7ba415093423507e3e2b4d3
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277891
+created: 1605470277891
+url: "{{ENVIRONMENT}}"
+name: gcStats
+description: >-
+  Returns GC statistics. See
+  [GCStats](https://golang.org/pkg/runtime/debug/#GCStats) for information about
+  the fields of the returned object.
+
+
+  **Parameters**
+
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_gcStats",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277891
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

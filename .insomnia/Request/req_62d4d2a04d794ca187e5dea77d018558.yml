@@ -1,0 +1,79 @@
+_id: req_62d4d2a04d794ca187e5dea77d018558
+type: Request
+parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
+modified: 1605470278120
+created: 1605470278120
+url: "{{ENVIRONMENT}}"
+name: putHex
+description: "Stores binary data in the local database.\r
+
+  \r
+
+  **Note:** This function is deprecated and will be removed in the future.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `STRING` - Database name.\r
+
+  \r
+
+  `STRING` - Key name.\r
+
+  \r
+
+  `DATA` - The data to store.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"testDB\",\r
+
+  \  \"myKey\",\r
+
+  \  \"0x68656c6c6f20776f726c64\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - returns `true` if the value was stored, otherwise `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"db_putHex",
+    	"params":[
+    		"testDB",
+    		"testKey",
+    		"{{EXAMPLE_HEX}}"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278120
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

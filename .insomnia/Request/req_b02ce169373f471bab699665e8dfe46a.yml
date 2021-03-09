@@ -1,0 +1,74 @@
+_id: req_b02ce169373f471bab699665e8dfe46a
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278197
+created: 1605470278197
+url: "{{ENVIRONMENT}}"
+name: getUncleByBlockNumberAndIndex
+description: "Returns information about a uncle of a block by number and uncle
+  index position.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY|TAG` - a block number, or the string `\"earliest\"`, `\"latest\"`
+  or `\"pending\"`, as in the default block parameter.\r
+
+  \r
+
+  `QUANTITY` - the uncle's index position.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0x29c', // 668\r
+
+  \   '0x0' // 0\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getBlockByHash`\r
+
+  \r
+
+  **Note:** An uncle doesn't contain individual transactions."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getUncleByBlockNumberAndIndex",
+    	"params":[
+    		"0x29c",
+    		"0x0"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278197
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

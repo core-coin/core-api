@@ -1,0 +1,69 @@
+_id: req_d79cfdfa8fb447118669151f7743dd96
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278288
+created: 1605470278288
+url: "{{ENVIRONMENT}}"
+name: getBalance
+description: "Returns the balance of the account of given address.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 24 Bytes - Address to check for balance.\r
+
+  \r
+
+  `QUANTITY|TAG` - Integer block number, or the string \"latest\",
+  \"earliest\" or \"pending\", see the default block parameter\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   ' 0x407d73d8a49eeb85d32cf465507dd71d507100c1',\r
+
+  \   'latest'\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - Integer of the current balance in Ore."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getBalance",
+    	"params":[
+    		"0x407d73d8a49eeb85d32cf465507dd71d507100c1", 
+    		"latest"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278288
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

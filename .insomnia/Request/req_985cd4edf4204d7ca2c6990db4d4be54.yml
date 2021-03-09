@@ -1,0 +1,38 @@
+_id: req_985cd4edf4204d7ca2c6990db4d4be54
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277840
+created: 1605470277840
+url: "{{ENVIRONMENT}}"
+name: traceBlockFromFile
+description: |-
+  The `traceBlockFromFile` accepts a file containing the RLP of the block.
+
+  **Parameters**
+
+  `STRING` - File name.
+
+  `OBJECT` - Options.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_traceBlockFromFile",
+    	"params":["{{FILE_NAME}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277840
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

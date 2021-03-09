@@ -1,0 +1,45 @@
+_id: req_433b4c11d8a047249e1a1b7e31c52c68
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278039
+created: 1605470278039
+url: "{{ENVIRONMENT}}"
+name: newAccount
+description: >-
+  Generates a new private key and stores it in the key store directory. The key
+  file is encrypted with the given passphrase.
+
+
+  **Parameters**
+
+
+  `STRING` - Passphrase (optional).
+
+
+  **Returns**
+
+
+  `HEX` - The address of the new account.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_newAccount",
+    	"params":["key"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278039
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

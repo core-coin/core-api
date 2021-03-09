@@ -1,0 +1,45 @@
+_id: req_3178ed2bbf21407f91a47d8caca38861
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277886
+created: 1605470277886
+url: "{{ENVIRONMENT}}"
+name: goTrace
+description: >-
+  Turns on Go runtime tracing for the given duration and writes trace data to
+  disk.
+
+
+  **Parameters**
+
+
+  `STRING` - Trace data.
+
+
+  `NUMBER` - Duration.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_goTrace",
+    	"params":[
+            "{{EXAMPLE_STRING}}",
+            1
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277886
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

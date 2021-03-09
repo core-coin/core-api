@@ -1,0 +1,36 @@
+_id: req_ea594e5aa2d143549ef75e329bdb88e7
+type: Request
+parentId: fld_4de8652689664c31936b4a40f2821ff5
+modified: 1605470277937
+created: 1605470277937
+url: "{{ENVIRONMENT}}"
+name: start
+description: |-
+  Start the CPU mining process with the given number of threads.
+
+  **Parameters**
+
+  `NUMBER` - Amount of CPU threads to be used.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"miner_start",
+    	"params":[3],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277937
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,111 @@
+_id: req_f21c8fa70cd64e8d899ef676a2e3280e
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278223
+created: 1605470278223
+url: "{{ENVIRONMENT}}"
+name: getTransactionByHash
+description: "Returns the information about a transaction requested by
+  transaction hash.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - hash of a transaction\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   \"0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `OBJECT` - A transaction object, or null when no transaction was found:\r
+
+  \r
+
+  `hash`: `DATA`, 32 Bytes - Hash of the transaction.\r
+
+  \r
+
+  `nonce`: `QUANTITY` - The number of transactions made by the sender prior to
+  this one.\r
+
+  \r
+
+  `blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was
+  in. `null` when its pending.\r
+
+  \r
+
+  `blockNumber`: `QUANTITY` - Block number where this transaction was in.
+  `null` when its pending.\r
+
+  \r
+
+  `transactionIndex`: `QUANTITY` - Integer of the transactions index position
+  in the block. `null` when its pending.\r
+
+  \r
+
+  `from`: `DATA`, 24 Bytes - address of the sender.\r
+
+  \r
+
+  `to`: `DATA`, 24 Bytes - address of the receiver. `null` when its a contract
+  creation transaction.\r
+
+  \r
+
+  `value`: `QUANTITY` - Value transferred in Ore.\r
+
+  \r
+
+  `energyPrice`: `QUANTITY` - Energy price provided by the sender in Ore.\r
+
+  \r
+
+  `energy`: `QUANTITY` - Energy provided by the sender.\r
+
+  \r
+
+  `input`: `DATA` - the data send along with the transaction."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getTransactionByHash",
+    	"params":[
+    		"0xb2fea9c4b24775af6990237aa90228e5e092c56bdaee74496992a53c208da1ee"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278223
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

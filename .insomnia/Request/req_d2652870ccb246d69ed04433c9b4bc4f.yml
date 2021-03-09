@@ -1,0 +1,49 @@
+_id: req_d2652870ccb246d69ed04433c9b4bc4f
+type: Request
+parentId: fld_b483d9a64ca24b3a951962c5fd6f7370
+modified: 1605470277908
+created: 1605470277908
+url: "{{ENVIRONMENT}}"
+name: content
+description: >-
+  The `content` inspection property can be queried to list the exact details of
+  all the transactions currently pending for inclusion in the next block(s), as
+  well as the ones that are being scheduled for future execution only.
+
+
+  The result is an object with two fields `pending` and `queued`. Each of these fields are associative arrays, in which each entry maps an origin-address to a batch of scheduled transactions. These batches themselves are maps associating nonces with actual transactions.
+
+
+  **Parameters**
+
+
+  none
+
+
+  **Returns**
+
+
+  `OBJECT` - The object with `pending` and `queued` transactions.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"txpool_content",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277908
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

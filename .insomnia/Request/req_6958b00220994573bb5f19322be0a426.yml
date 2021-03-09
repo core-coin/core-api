@@ -1,0 +1,59 @@
+_id: req_6958b00220994573bb5f19322be0a426
+type: Request
+parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
+modified: 1605470278342
+created: 1605470278342
+url: "{{ENVIRONMENT}}"
+name: version
+description: "Returns the current network id.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `String` - The current network id.\r
+
+  \r
+
+  `\"1\"`: Core Mainnet\r
+
+  \r
+
+  `\"3\"`: Devin Testnet\r
+
+  \r
+
+  `\"4\"`: Koliba Testnet"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"net_version",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278342
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

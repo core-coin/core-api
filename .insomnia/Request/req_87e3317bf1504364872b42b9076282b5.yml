@@ -1,0 +1,62 @@
+_id: req_87e3317bf1504364872b42b9076282b5
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278275
+created: 1605470278275
+url: "{{ENVIRONMENT}}"
+name: getBlockTransactionCountByHash
+description: "Returns the number of transactions in a block from a block
+  matching the given block hash.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - hash of a block\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238'\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - Integer of the number of transactions in this block."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getBlockTransactionCountByHash",
+    	"params":[
+    		"0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278275
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

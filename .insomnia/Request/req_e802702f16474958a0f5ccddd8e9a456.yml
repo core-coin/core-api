@@ -1,0 +1,36 @@
+_id: req_e802702f16474958a0f5ccddd8e9a456
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277863
+created: 1605470277863
+url: "{{ENVIRONMENT}}"
+name: stopGoTrace
+description: |-
+  Stops writing the Go runtime trace.
+
+  **Parameters**
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_stopGoTrace",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277863
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

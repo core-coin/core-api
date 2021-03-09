@@ -1,0 +1,59 @@
+_id: req_76ecb09d763a4cfca5095d520000262a
+type: Request
+parentId: fld_e10bc411ab0447e2a2ce6dfaec162b2a
+modified: 1605470278352
+created: 1605470278352
+url: "{{ENVIRONMENT}}"
+name: sha3
+description: "Returns SHA3-256 of the given data.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `data` - The data to convert into a SHA3 hash.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0x68656c6c6f20776f726c64\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `Data` - The SHA3 result of the given string."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"web3_sha3",
+    	"params":["{{EXAMPLE_HEX}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278352
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

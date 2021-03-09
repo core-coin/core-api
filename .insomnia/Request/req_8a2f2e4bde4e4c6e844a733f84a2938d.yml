@@ -1,0 +1,64 @@
+_id: req_8a2f2e4bde4e4c6e844a733f84a2938d
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278152
+created: 1605470278152
+url: "{{ENVIRONMENT}}"
+name: getLogs
+description: "Returns an array of all logs matching a given filter object.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `OBJECT` - the filter object, see eth_newFilter parameters.\r
+
+  \r
+
+  ```\r
+
+  params: [{\r
+
+  \  \"topics\":
+  [\"0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b\"]\r
+
+  }]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getFilterChanges`"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getLogs",
+    	"params":[{
+    		"topics":[
+    			"0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"
+    		]
+    	}],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278152
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

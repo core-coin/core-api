@@ -1,0 +1,36 @@
+_id: req_ffbb1ab06de94eb497f44863dbcc4d19
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277881
+created: 1605470277881
+url: "{{ENVIRONMENT}}"
+name: seedHash
+description: |-
+  Fetches and retrieves the seed hash of the block by number.
+
+  **Parameters**
+
+  `NUMBER` - Block number.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_seedHash",
+    	"params":[1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277881
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

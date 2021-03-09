@@ -1,0 +1,36 @@
+_id: req_0ba80fbd598a4d9f96d6306ab08a8075
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277869
+created: 1605470277869
+url: "{{ENVIRONMENT}}"
+name: stopCPUProfile
+description: |-
+  Stops an ongoing CPU profile.
+
+  **Parameters**
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_stopCPUProfile",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277869
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

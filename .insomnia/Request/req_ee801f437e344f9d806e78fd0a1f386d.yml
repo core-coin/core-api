@@ -1,0 +1,69 @@
+_id: req_ee801f437e344f9d806e78fd0a1f386d
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278279
+created: 1605470278279
+url: "{{ENVIRONMENT}}"
+name: getTransactionCount
+description: "Returns the number of transactions sent from an address.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 24 Bytes - Address.\r
+
+  \r
+
+  `QUANTITY|TAG` - Integer block number, or the string `\"latest\"`,
+  `\"earliest\"` or `\"pending\"`, see the default block parameter\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0x407d73d8a49eeb85d32cf465507dd71d507100c1',\r
+
+  \   'latest' // state at the latest block\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - integer of the number of transactions send from this address."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getTransactionCount",
+    	"params":[
+    		"0x407d73d8a49eeb85d32cf465507dd71d507100c1",
+    		"latest"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278279
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,69 @@
+_id: req_e6df8bb6362646079d125356987cbc43
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278202
+created: 1605470278202
+url: "{{ENVIRONMENT}}"
+name: getUncleByBlockHashAndIndex
+description: "Returns information about a uncle of a block by hash and uncle
+  index position.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - hash a block.\r
+
+  \r
+
+  `QUANTITY` - the uncle's index position.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\r
+
+  \   '0x0' // 0\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getBlockByHash`"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getUncleByBlockHashAndIndex",
+    	"params":[
+    		"0x7cea0c9ae53df7073fcd4e7b19fc3f1905a2540bbdbd9a10796c9296f5af55dc", 
+    		"0x0"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278202
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

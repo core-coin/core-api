@@ -1,0 +1,66 @@
+_id: req_21d4dbb1a2854ba79645fed10ce198f3
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278020
+created: 1605470278020
+url: "{{ENVIRONMENT}}"
+name: sendTransaction
+description: >-
+  Validate the given passphrase and submit transaction.
+
+
+  The transaction is the same argument as for `xcb_sendTransaction` and contains the from address. If the passphrase can be used to decrypt the private key belogging to `tx.from` the transaction is verified, signed and send onto the network. The account is not unlocked globally in the node and cannot be used in other RPC calls.
+
+
+  **Parameters**
+
+
+  `OBJECT` - Transaction `tx` info:
+
+
+  > `tx.from` - Address from.
+
+
+  > `tx.to` - Address to.
+
+
+  > `tx.value` - Value in Ore.
+
+
+  `STRING` - Passphrase of the account.
+
+
+  **Returns**
+
+
+  `HEX` - Transaction ID.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_sendTransaction",
+    	"params":[
+            {
+                "from": "{{EXAMPLE_ADDRESS_CB}}",
+                "to": "{{EXAMPLE_ADDRESS_CB}}",
+                "value": 1
+            },
+            "key"
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278020
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

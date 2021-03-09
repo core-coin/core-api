@@ -1,0 +1,43 @@
+_id: req_3c74b8a4c84449dba89eb4cb63c04f5e
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277899
+created: 1605470277899
+url: "{{ENVIRONMENT}}"
+name: backtraceAt
+description: >-
+  Sets the logging backtrace location. When a backtrace location is set and a
+  log message is emitted at that location, the stack of the goroutine executing
+  the log statement will be printed to stderr.
+
+
+  The location is specified as `<filename>:<line>`.
+
+
+  **Parameters**
+
+
+  `STRING` - Logging backtrace location.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_backtraceAt",
+    	"params":["server.go:443"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277899
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,72 @@
+_id: req_365ae2a631654dbaaeffc69b93353b2d
+type: Request
+parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
+modified: 1605470278124
+created: 1605470278124
+url: "{{ENVIRONMENT}}"
+name: getString
+description: "Returns string from the local database.\r
+
+  \r
+
+  **Note:** This function is deprecated and will be removed in the future.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `STRING` - Database name.\r
+
+  \r
+
+  `STRING` - Key name.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"testDB\",\r
+
+  \  \"myKey\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `STRING` - The previously stored string."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"db_getString",
+    	"params":[
+    		"testDB",
+    		"testKey"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278124
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

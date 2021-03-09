@@ -1,0 +1,36 @@
+_id: req_1f8e4ed0d6c347b9abe1cc09d7ae6465
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277866
+created: 1605470277866
+url: "{{ENVIRONMENT}}"
+name: startGoTrace
+description: |-
+  Starts writing a Go runtime trace to the given file.
+
+  **Parameters**
+
+  `STRING` - File location.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_startGoTrace",
+    	"params":["{{FILE_LOCATION}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277866
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

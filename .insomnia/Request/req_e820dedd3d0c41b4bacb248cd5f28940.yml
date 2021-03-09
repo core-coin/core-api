@@ -1,0 +1,61 @@
+_id: req_e820dedd3d0c41b4bacb248cd5f28940
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278320
+created: 1605470278320
+url: "{{ENVIRONMENT}}"
+name: syncing
+description: "Returns an object with data about the sync status or false.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `OBJECT|BOOLEAN`, An object with sync status data or `false`, when not
+  syncing:\r
+
+  \r
+
+  `startingBlock`: `QUANTITY` - The block at which the import started (will
+  only be reset, after the sync reached his head)\r
+
+  \r
+
+  `currentBlock`: `QUANTITY` - The current block, same as xcb_blockNumber\r
+
+  \r
+
+  `highestBlock`: `QUANTITY` - The estimated highest block"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_syncing",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278320
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

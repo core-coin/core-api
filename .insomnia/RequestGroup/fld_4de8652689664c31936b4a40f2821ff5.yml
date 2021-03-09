@@ -1,0 +1,11 @@
+_id: fld_4de8652689664c31936b4a40f2821ff5
+type: RequestGroup
+parentId: fld_daf1d40b10fd473fa0453862d754833b
+modified: 1605470277951
+created: 1605470277951
+name: miner
+description: The miner API allows you to remote control the node's mining
+  operation and set various mining specific settings.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1605470277951

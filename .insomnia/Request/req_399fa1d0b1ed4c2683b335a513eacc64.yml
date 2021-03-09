@@ -1,0 +1,62 @@
+_id: req_399fa1d0b1ed4c2683b335a513eacc64
+type: Request
+parentId: fld_5176b508b9d043869b2e3df427bd6d43
+modified: 1605470278086
+created: 1605470278086
+url: "{{ENVIRONMENT}}"
+name: newGroup
+description: "Create new group.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 60 Bytes - The identity address to add to a group (?).\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \ 
+  \"0x04f96a5e25610293e42a73908e93ccc8c4d4dc0edcfa9fa872f50cb214e08ebf61a03e245\
+  533f97284d442460f2998cd41858798ddfd4d661997d3940272b717b1\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - Returns `true` if the identity was successfully added to the
+  group, otherwise `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"shh_newGroup",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278086
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

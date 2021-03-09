@@ -1,0 +1,39 @@
+_id: req_aa0d059b51b24262847bae2204dd79f7
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278034
+created: 1605470278034
+url: "{{ENVIRONMENT}}"
+name: lockAccount
+description: >-
+  Removes the private key with given address from memory. The account can no
+  longer be used to send transactions.
+
+
+  **Parameters**
+
+
+  `HEX` - Address to lock.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_lockAccount",
+    	"params":["{{EXAMPLE_ADDRESS_CB}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278034
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

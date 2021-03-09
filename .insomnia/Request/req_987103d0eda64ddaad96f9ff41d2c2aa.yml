@@ -1,0 +1,45 @@
+_id: req_987103d0eda64ddaad96f9ff41d2c2aa
+type: Request
+parentId: fld_2eb313939ed94036abf2c76b0e41070a
+modified: 1605470278000
+created: 1605470278000
+url: "{{ENVIRONMENT}}"
+name: datadir
+description: >-
+  The datadir administrative property can be queried for the absolute path the
+  running Geth node currently uses to store all its databases.
+
+
+  **Parameters**
+
+
+  none
+
+
+  **Returns**
+
+
+  `STRING` - The path for data storage.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"admin_datadir",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278000
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,40 @@
+_id: req_29c459fac835466f8bfebee110c2a944
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277874
+created: 1605470277874
+url: "{{ENVIRONMENT}}"
+name: stacks
+description: >-
+  Returns a printed representation of the stacks of all goroutines. Note that
+  the web3 wrapper for this method takes care of the printing and does not
+  return the string.
+
+
+  **Parameters**
+
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_stacks",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277874
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

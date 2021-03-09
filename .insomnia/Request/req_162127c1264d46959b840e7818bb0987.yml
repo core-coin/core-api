@@ -1,0 +1,36 @@
+_id: req_162127c1264d46959b840e7818bb0987
+type: Request
+parentId: fld_4de8652689664c31936b4a40f2821ff5
+modified: 1605470277931
+created: 1605470277931
+url: "{{ENVIRONMENT}}"
+name: stop
+description: |-
+  Stop the CPU mining operation.
+
+  **Parameters**
+
+  none
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"miner_stop",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277931
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

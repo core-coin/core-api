@@ -1,0 +1,64 @@
+_id: req_0b236e78a78e44ebb2ac65c2982b968b
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278161
+created: 1605470278161
+url: "{{ENVIRONMENT}}"
+name: uninstallFilter
+description: "Uninstalls a filter with given id. Should always be called when
+  watch is no longer needed. Additonally Filters timeout when they aren't
+  requested with `xcb_getFilterChanges` for a period of time.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY` - The filter id.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0xb\" // 11\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - `true` if the filter was successfully uninstalled, otherwise
+  `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_uninstallFilter",
+    	"params":[
+    		"0xb"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278161
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

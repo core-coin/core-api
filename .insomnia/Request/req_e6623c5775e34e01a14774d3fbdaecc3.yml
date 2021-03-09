@@ -1,0 +1,36 @@
+_id: req_e6623c5775e34e01a14774d3fbdaecc3
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277889
+created: 1605470277889
+url: "{{ENVIRONMENT}}"
+name: getBlockRlp
+description: |-
+  Retrieves and returns the RLP encoded block by number.
+
+  **Parameters**
+
+  `NUMBER` - Block number.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_getBlockRlp",
+    	"params":[1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277889
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,58 @@
+_id: req_fee77a928951492eaf14d200395f814a
+type: Request
+parentId: fld_2eb313939ed94036abf2c76b0e41070a
+modified: 1605470278006
+created: 1605470278006
+url: "{{ENVIRONMENT}}"
+name: addPeer
+description: >-
+  The addPeer administrative method requests adding a new remote node to the
+  list of tracked static nodes. The node will try to maintain connectivity to
+  these nodes at all times, reconnecting every once in a while if the remote
+  connection goes down.
+
+
+  **Parameters**
+
+
+  `enode` - The ecosystem node connection.
+
+
+  ```
+
+  params: [
+    "enode://..."
+  ]
+
+  ```
+
+
+  **Returns**
+
+
+  `BOOLEAN` - The result of adding a node. Successful `true` otherwise `false`.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"admin_addPeer",
+    	"params":[
+            "{{ENODE}}"
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278006
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

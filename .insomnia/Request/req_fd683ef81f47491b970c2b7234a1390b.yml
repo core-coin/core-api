@@ -1,0 +1,46 @@
+_id: req_fd683ef81f47491b970c2b7234a1390b
+type: Request
+parentId: fld_b483d9a64ca24b3a951962c5fd6f7370
+modified: 1605470277903
+created: 1605470277903
+url: "{{ENVIRONMENT}}"
+name: status
+description: >-
+  The `status` inspection property can be queried for the number of transactions
+  currently pending for inclusion in the next block(s), as well as the ones that
+  are being scheduled for future execution only.
+
+
+  **Parameters**
+
+
+  none
+
+
+  **Returns**
+
+
+  `OBJECT` - The result is an object with two fields `pending` and `queued`, each of which is a counter representing the number of transactions in that particular state.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"txpool_status",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277903
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

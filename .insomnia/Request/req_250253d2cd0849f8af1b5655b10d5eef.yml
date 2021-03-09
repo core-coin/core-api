@@ -1,0 +1,59 @@
+_id: req_250253d2cd0849f8af1b5655b10d5eef
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278180
+created: 1605470278180
+url: "{{ENVIRONMENT}}"
+name: compileSerpent
+description: "Returns compiled serpent code.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `String` - The source code.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   \"/* some serpent */\",\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `DATA` - The compiled source code."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_compileSerpent",
+    	"params":["/* some serpent */"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278180
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,51 @@
+_id: req_c5b1303f314c43ea8e8da1b9fd9b745b
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278049
+created: 1605470278049
+url: "{{ENVIRONMENT}}"
+name: importRawKey
+description: >-
+  Imports the given unencrypted private key (hex string) into the key store,
+  encrypting it with the passphrase.
+
+
+  **Parameters**
+
+
+  `HEX` - Keydata.
+
+
+  `STRING` - Passphrase.
+
+
+  **Returns**
+
+
+  `HEX` - Returns the address of the new account.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_importRawKey",
+    	"params":[
+            "{{EXAMPLE_ADDRESS_CB}}",
+            "key"
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278049
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

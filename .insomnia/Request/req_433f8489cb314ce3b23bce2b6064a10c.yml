@@ -1,0 +1,69 @@
+_id: req_433f8489cb314ce3b23bce2b6064a10c
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278218
+created: 1605470278218
+url: "{{ENVIRONMENT}}"
+name: getTransactionByBlockHashAndIndex
+description: "Returns information about a transaction by block hash and
+  transaction index position.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - hash of a block.\r
+
+  \r
+
+  `QUANTITY` - integer of the transaction index position.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331',\r
+
+  \   '0x0' // 0\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getTransactionByHash`"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getTransactionByBlockHashAndIndex",
+    	"params":[
+    		"0x3c82bc62179602b67318c013c10f99011037c49cba84e31ffe6e465a21c521a7", 
+    		"0x0"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278218
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

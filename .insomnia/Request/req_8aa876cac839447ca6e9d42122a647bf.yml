@@ -1,0 +1,70 @@
+_id: req_8aa876cac839447ca6e9d42122a647bf
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278211
+created: 1605470278211
+url: "{{ENVIRONMENT}}"
+name: getTransactionByBlockNumberAndIndex
+description: "Returns information about a transaction by block number and
+  transaction index position.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY|TAG` - a block number, or the string `\"earliest\"`, `\"latest\"`
+  or `\"pending\"`, as in the default block parameter.\r
+
+  \r
+
+  `QUANTITY` - the transaction index position.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0x29c', // 668\r
+
+  \   '0x0' // 0\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  See `xcb_getTransactionByHash`"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getTransactionByBlockNumberAndIndex",
+    	"params":[
+    		"0x52A96E", 
+    		"0x1"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278211
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

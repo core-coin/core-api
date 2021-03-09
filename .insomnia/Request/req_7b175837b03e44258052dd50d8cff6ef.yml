@@ -1,0 +1,40 @@
+_id: req_7b175837b03e44258052dd50d8cff6ef
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277817
+created: 1605470277817
+url: "{{ENVIRONMENT}}"
+name: writeMemProfile
+description: >-
+  Writes an allocation profile to the given file. Note that the profiling rate
+  cannot be set through the API, it must be set on the command line using the
+  `--memprofilerate` flag.
+
+
+  **Parameters**
+
+
+  `STRING` - File location.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_writeBlockProfile",
+    	"params":["{{FILE_LOCATION}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277818
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

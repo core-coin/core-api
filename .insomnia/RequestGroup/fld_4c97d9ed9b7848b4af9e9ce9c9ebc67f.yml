@@ -1,0 +1,10 @@
+_id: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+type: RequestGroup
+parentId: fld_daf1d40b10fd473fa0453862d754833b
+modified: 1605470278054
+created: 1605470278054
+name: personal
+description: The personal API manages private keys in the key store.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1605470278054

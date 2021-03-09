@@ -1,0 +1,71 @@
+_id: req_c35f257eb8614ab5886732a82c9573ff
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278260
+created: 1605470278260
+url: "{{ENVIRONMENT}}"
+name: sign
+description: "The sign method calculates an Ethereum specific signature with:
+  `sign(keccak256(\"\\x19Ethereum Signed Message:\\n\" + len(message) +
+  message)))`.\r
+
+  \r
+
+  By adding a prefix to the message makes the calculated signature
+  recognisable as an Ethereum specific signature. This prevents misuse where a
+  malicious DApp can sign arbitrary data (e.g. transaction) and use the
+  signature to impersonate the victim.\r
+
+  \r
+
+  **Note:** the address to sign with must be unlocked.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  account, message\r
+
+  \r
+
+  `DATA`, 20 Bytes - address\r
+
+  \r
+
+  `DATA`, N Bytes - message to sign\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `DATA`: Signature"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_sign",
+    	"params":[
+    		"0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", 
+    		"{{EXAMPLE_HEX}}"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278260
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

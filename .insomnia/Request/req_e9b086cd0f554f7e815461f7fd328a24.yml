@@ -1,0 +1,47 @@
+_id: req_e9b086cd0f554f7e815461f7fd328a24
+type: Request
+parentId: fld_e10bc411ab0447e2a2ce6dfaec162b2a
+modified: 1605470278357
+created: 1605470278357
+url: "{{ENVIRONMENT}}"
+name: clientVersion
+description: "Returns the current client version.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `String` - The current client version."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"web3_clientVersion",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278357
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

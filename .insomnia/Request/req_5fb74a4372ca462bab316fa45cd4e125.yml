@@ -1,0 +1,47 @@
+_id: req_5fb74a4372ca462bab316fa45cd4e125
+type: Request
+parentId: fld_1b7a3a57df0b46a4ada7ac37b7d1cfac
+modified: 1605470278339
+created: 1605470278339
+url: "{{ENVIRONMENT}}"
+name: peerCount
+description: "Returns number of peers currently connected to the client.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  none\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `Integer` - Quantity of the connected peers."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"net_peerCount",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278339
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

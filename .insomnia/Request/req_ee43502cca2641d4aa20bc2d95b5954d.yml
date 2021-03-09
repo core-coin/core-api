@@ -1,0 +1,38 @@
+_id: req_ee43502cca2641d4aa20bc2d95b5954d
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277894
+created: 1605470277894
+url: "{{ENVIRONMENT}}"
+name: cpuProfile
+description: |-
+  Turns on CPU profiling for the given duration and writes profile data to disk.
+
+  **Parameters**
+
+  `STRING` - File location.
+
+  `NUMBER` - Seconds.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_cpuProfile",
+    	"params":["{{FILE_LOCATION}}", 1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277894
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

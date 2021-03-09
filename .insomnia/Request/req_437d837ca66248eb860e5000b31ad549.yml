@@ -1,0 +1,48 @@
+_id: req_437d837ca66248eb860e5000b31ad549
+type: Request
+parentId: fld_2eb313939ed94036abf2c76b0e41070a
+modified: 1605470277996
+created: 1605470277996
+url: "{{ENVIRONMENT}}"
+name: nodeInfo
+description: >-
+  The `nodeInfo` administrative property can be queried for all the information
+  known about the running Gocore node at the networking granularity. These
+  include general information about the node itself as a participant of the P2P
+  overlay protocol, as well as specialized information added by each of the
+  running application protocols.
+
+
+  **Parameters**
+
+
+  none
+
+
+  **Returns**
+
+
+  `OBJECT` - The object with information.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"admin_nodeInfo",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277996
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

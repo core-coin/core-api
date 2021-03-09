@@ -1,0 +1,36 @@
+_id: req_4a683eaa6ad54d2886c6d2fd0b2a9da5
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277822
+created: 1605470277822
+url: "{{ENVIRONMENT}}"
+name: writeBlockProfile
+description: |-
+  Writes a goroutine blocking profile to the given file.
+
+  **Parameters**
+
+  `STRING` - File location.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_writeBlockProfile",
+    	"params":["{{FILE_LOCATION}}"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277822
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

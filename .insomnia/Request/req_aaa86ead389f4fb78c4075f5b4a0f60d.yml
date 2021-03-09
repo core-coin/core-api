@@ -1,0 +1,44 @@
+_id: req_aaa86ead389f4fb78c4075f5b4a0f60d
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277896
+created: 1605470277896
+url: "{{ENVIRONMENT}}"
+name: blockProfile
+description: >-
+  Turns on block profiling for the given duration and writes profile data to
+  disk. It uses a profile rate of 1 for most accurate information. If a
+  different rate is desired, set the rate and write the profile manually using
+  `debug_writeBlockProfile`.
+
+
+  **Parameters**
+
+
+  `STRING` - File location.
+
+
+  `NUMBER` - The rate.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_blockProfile",
+    	"params":["{{FILE_LOCATION}}", 1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

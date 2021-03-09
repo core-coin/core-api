@@ -1,0 +1,56 @@
+_id: req_a3d35277662c4d0da82360a2cb5c7db7
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278241
+created: 1605470278241
+url: "{{ENVIRONMENT}}"
+name: estimateEnergy
+description: "Generates and returns an estimate of how much energy is necessary
+  to allow the transaction to complete. The transaction will not be added to the
+  blockchain. Note that the estimate may be significantly more than the amount
+  of energy actually used by the transaction, for a variety of reasons including
+  CVM mechanics and node performance.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  See `xcb_call` parameters, expect that all properties are optional. If no
+  energy limit is specified gocore uses the block energy limit from the pending
+  block as an upper bound. As a result the returned estimate might not be enough
+  to executed the call/transaction when the amount of energy is higher than the
+  pending block energy limit.\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `QUANTITY` - the amount of energy used."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_estimateEnergy",
+    	"params":[
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278241
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

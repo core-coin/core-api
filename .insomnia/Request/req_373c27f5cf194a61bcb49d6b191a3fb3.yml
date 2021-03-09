@@ -1,0 +1,56 @@
+_id: req_373c27f5cf194a61bcb49d6b191a3fb3
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278026
+created: 1605470278026
+url: "{{ENVIRONMENT}}"
+name: unlockAccount
+description: >-
+  Decrypts the key with the given address from the key store.
+
+
+  Both passphrase and unlock duration are optional when using the console. If the passphrase is not supplied as an argument, the console will prompt for the passphrase interactively.
+
+
+  The unencrypted key will be held in memory until the unlock duration expires. If the unlock duration defaults to 300 seconds. An explicit duration of zero seconds unlocks the key until gocore exits.
+
+
+  **Parameters**
+
+
+  `HEX` - Address of wallet.
+
+
+  `STRING` - Passphrase.
+
+
+  `NUMBER` - Unlock duration (default 300s).
+
+
+  **Returns**
+
+
+  `BOOLEAN` - The result of unlocking.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_unlockAccount",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278026
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

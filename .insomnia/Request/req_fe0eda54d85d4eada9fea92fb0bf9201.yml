@@ -1,0 +1,62 @@
+_id: req_fe0eda54d85d4eada9fea92fb0bf9201
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278183
+created: 1605470278183
+url: "{{ENVIRONMENT}}"
+name: compileYlem
+description: "Returns compiled solidity code.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `String` - The source code.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   \"contract test { function multiply(uint a) returns(uint d) {   return a
+  * 7;   } }\",\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `DATA` - The compiled source code."
+method: POST
+body:
+  mimeType: ""
+  text: >-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_compileYelm",
+    	"params":[
+    		"contract test { function multiply(uint a) returns(uint d) {   return a * 7;   } }"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278183
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,39 @@
+_id: req_78d350d82e144cf391564791537606ac
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277893
+created: 1605470277893
+url: "{{ENVIRONMENT}}"
+name: dumpBlock
+description: >-
+  Retrieves the state that corresponds to the block number and returns a list of
+  accounts (including storage and code).
+
+
+  **Parameters**
+
+
+  `NUMBER` - Block number.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_dumpBlock",
+    	"params":[10],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277893
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

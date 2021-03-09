@@ -1,0 +1,40 @@
+_id: req_5c9dd328d2974b8b91637322f9c37b1e
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277876
+created: 1605470277876
+url: "{{ENVIRONMENT}}"
+name: setBlockProfileRate
+description: >-
+  Sets the rate (in samples/sec) of goroutine block profile data collection. A
+  non-zero rate enables block profiling, setting it to zero stops the profile.
+  Collected profile data can be written using `debug_writeBlockProfile`.
+
+
+  **Parameters**
+
+
+  `NUMBER` - The rate.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_setBlockProfileRate",
+    	"params":[10],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277876
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

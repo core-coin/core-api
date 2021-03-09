@@ -1,0 +1,122 @@
+_id: req_2dda48e786424fafa95489b6f2e5156a
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278207
+created: 1605470278207
+url: "{{ENVIRONMENT}}"
+name: getTransactionReceipt
+description: "Returns the receipt of a transaction by transaction hash.\r
+
+  \r
+
+  **Note:** That the receipt is not available for pending transactions.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 32 Bytes - hash of a transaction\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \   '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238'\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `OBJECT` - A transaction receipt object, or `null` when no receipt was
+  found:\r
+
+  \r
+
+  \r
+
+  `transactionHash`: `DATA`, 32 Bytes - hash of the transaction.\r
+
+  \r
+
+  `transactionIndex`: `QUANTITY` - integer of the transactions index position
+  in the block.\r
+
+  \r
+
+  `blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was
+  in.\r
+
+  \r
+
+  `blockNumber`: `QUANTITY` - block number where this transaction was in.\r
+
+  \r
+
+  `cumulativeEnergyUsed`: `QUANTITY` - The total amount of energy used when
+  this transaction was executed in the block.\r
+
+  \r
+
+  `energyUsed`: `QUANTITY` - The amount of gas used by this specific
+  transaction alone.\r
+
+  \r
+
+  `contractAddress`: `DATA`, 24 Bytes - The contract address created, if the
+  transaction was a contract creation, otherwise `null`.\r
+
+  \r
+
+  `logs`: `Array` - Array of log objects, which this transaction generated.\r
+
+  \r
+
+  `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly
+  retrieve related logs.\r
+
+  \r
+
+  It also returns either :\r
+
+  \r
+
+  `root` : `DATA` 32 bytes of post-transaction stateroot\r
+
+  \r
+
+  `status`: `QUANTITY` either `1` (success) or `0` (failure)"
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_getTransactionReceipt",
+    	"params":[
+    		"0xa3ece39ae137617669c6933b7578b94e705e765683f260fcfe30eaa41932610f"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278207
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,36 @@
+_id: req_a28f563a1f464d259a34ea03232ca3c4
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277825
+created: 1605470277825
+url: "{{ENVIRONMENT}}"
+name: vmodule
+description: |-
+  Sets the logging verbosity pattern.
+
+  **Parameters**
+
+  `STRING` - Verbosity pattern.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_vmodule",
+    	"params":["xcb/*=6"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277825
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

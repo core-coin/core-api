@@ -1,0 +1,47 @@
+_id: req_2d247a5ba9474d269dfe2daf59e6b9f9
+type: Request
+parentId: fld_2eb313939ed94036abf2c76b0e41070a
+modified: 1605470277986
+created: 1605470277986
+url: "{{ENVIRONMENT}}"
+name: setSolc
+description: >-
+  The `setSolc` administrative method sets the Ylem compiler path to be used by
+  the node when invoking the `xcb_compileYlem` RPC method. The Ylem compiler
+  path defaults to `/usr/bin/solc` if not set, so you only need to change it for
+  using a non-standard compiler location.
+
+
+  **Parameters**
+
+
+  `STRING` - The path for Ylem compiler.
+
+
+  **Returns**
+
+
+  `STRING` - The version of compiler.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"admin_setSolc",
+    	"params":["/usr/bin/solc"],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277986
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

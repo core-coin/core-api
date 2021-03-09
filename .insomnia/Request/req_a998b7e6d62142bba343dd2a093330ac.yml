@@ -1,0 +1,79 @@
+_id: req_a998b7e6d62142bba343dd2a093330ac
+type: Request
+parentId: fld_4a6150b4d2f14ea6b44a4759334e5a1b
+modified: 1605470278129
+created: 1605470278129
+url: "{{ENVIRONMENT}}"
+name: putString
+description: "Stores a string in the local database.\r
+
+  \r
+
+  **Note:** this function is deprecated and will be removed in the future.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `STRING` - Database name.\r
+
+  \r
+
+  `STRING` - Key name.\r
+
+  \r
+
+  `STRING` - String to store.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"testDB\",\r
+
+  \  \"myKey\",\r
+
+  \  \"myString\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - Returns `true` if the value was stored, otherwise `false`."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"db_putString",
+    	"params":[
+    		"testDB",
+    		"testKey",
+    		"{{EXAMPLE_STRING}}"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278129
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

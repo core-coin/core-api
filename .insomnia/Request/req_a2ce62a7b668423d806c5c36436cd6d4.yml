@@ -1,0 +1,44 @@
+_id: req_a2ce62a7b668423d806c5c36436cd6d4
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277844
+created: 1605470277844
+url: "{{ENVIRONMENT}}"
+name: traceBlockByHash
+description: >-
+  The `traceBlockByHash` accepts a block hash and will replay the block that is
+  already present in the database.
+
+
+  **Parameters**
+
+
+  `HEX` - Block hash.
+
+
+  `OBJECT` - Options.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_traceBlockByHash",
+    	"params":[
+            "0xblock"
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277844
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

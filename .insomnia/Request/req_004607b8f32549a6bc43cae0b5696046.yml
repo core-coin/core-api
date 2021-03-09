@@ -1,0 +1,109 @@
+_id: req_004607b8f32549a6bc43cae0b5696046
+type: Request
+parentId: fld_5176b508b9d043869b2e3df427bd6d43
+modified: 1605470278065
+created: 1605470278065
+url: "{{ENVIRONMENT}}"
+name: getFilterChanges
+description: "Polling method for whisper filters. Returns new messages since the
+  last call of this method.\r
+
+  \r
+
+  **Note:** calling the `shh_getMessages` method, will reset the buffer for
+  this method, so that you won't receive duplicate messages.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `QUANTITY` - The filter id.\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0x7\" // 7\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `Array` - Array of messages received since last poll:\r
+
+  \r
+
+  `hash`: `DATA`, 32 Bytes (?) - The hash of the message.\r
+
+  \r
+
+  `from`: `DATA`, 60 Bytes - The sender of the message, if a sender was
+  specified.\r
+
+  \r
+
+  `to`: `DATA`, 60 Bytes - The receiver of the message, if a receiver was
+  specified.\r
+
+  \r
+
+  `expiry`: `QUANTITY` - Integer of the time in seconds when this message
+  should expire (?).\r
+
+  \r
+
+  `ttl`: `QUANTITY` - Integer of the time the message should float in the
+  system in seconds (?).\r
+
+  \r
+
+  `sent`: `QUANTITY` - Integer of the unix timestamp when the message was
+  sent.\r
+
+  \r
+
+  `topics`: `Array of DATA` - Array of DATA topics the message contained.\r
+
+  \r
+
+  `payload`: `DATA` - The payload of the message.\r
+
+  \r
+
+  `workProved`: `QUANTITY` - Integer of the work this message required before
+  it was send (?)."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"shh_getFilterChanges",
+    	"params":[
+    		"0x7"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278065
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

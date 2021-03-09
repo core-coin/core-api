@@ -1,0 +1,47 @@
+_id: req_7a132c5ec5d643bea8c2a8c6c628f553
+type: Request
+parentId: fld_2eb313939ed94036abf2c76b0e41070a
+modified: 1605470277975
+created: 1605470277975
+url: "{{ENVIRONMENT}}"
+name: stopRPC
+description: >-
+  The `stopRPC` administrative method closes the currently open HTTP RPC
+  endpoint. As the node can only have a single HTTP endpoint running, this
+  method takes no parameters, returning a boolean whether the endpoint was
+  closed or not.
+
+
+  **Parameters**
+
+
+  none
+
+
+  **Returns**
+
+
+  `BOOLEAN` - The success of the request `true` or `false`.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"admin_stopRPC",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277975
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

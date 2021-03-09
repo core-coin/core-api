@@ -1,0 +1,76 @@
+_id: req_0c5e88e44ed54c659cea9b22356dfba5
+type: Request
+parentId: fld_fbd19ba7ffb349d680d3efb5b9ac4edb
+modified: 1605470278143
+created: 1605470278143
+url: "{{ENVIRONMENT}}"
+name: submitWork
+description: "Used for submitting a proof-of-work solution.\r
+
+  \r
+
+  **Parameters**\r
+
+  \r
+
+  `DATA`, 8 Bytes - The nonce found (64 bits)\r
+
+  \r
+
+  `DATA`, 32 Bytes - The header's pow-hash (256 bits)\r
+
+  \r
+
+  `DATA`, 32 Bytes - The mix digest (256 bits)\r
+
+  \r
+
+  ```\r
+
+  params: [\r
+
+  \  \"0x0000000000000001\",\r
+
+  \  \"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef\",\r
+
+  \  \"0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000\"\r
+
+  ]\r
+
+  ```\r
+
+  \r
+
+  **Returns**\r
+
+  \r
+
+  `BOOLEAN` - Returns true if the provided solution is valid, otherwise
+  false."
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0", 
+    	"method":"xcb_submitWork", 
+    	"params":[
+    		"0x0000000000000001", 
+    		"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef", 
+    		"0xD1GE5700000000000000000000000000D1GE5700000000000000000000000000"
+    	],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278143
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

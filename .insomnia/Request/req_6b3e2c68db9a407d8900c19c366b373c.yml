@@ -1,0 +1,47 @@
+_id: req_6b3e2c68db9a407d8900c19c366b373c
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277860
+created: 1605470277860
+url: "{{ENVIRONMENT}}"
+name: traceBlock
+description: >-
+  The `traceBlock` method will return a full stack trace of all invoked opcodes
+  of all transaction that were included included in this block.
+
+
+  **Note:** the parent of this block must be present or it will fail.
+
+
+  **Parameters**
+
+
+  `BYTE` - blockRlp.
+
+
+  `OBJECT` - Virtual machine object (vm.Config).
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"xcb_energyPrice",
+    	"params":[
+            "0xblock_rlp"
+        ],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277860
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

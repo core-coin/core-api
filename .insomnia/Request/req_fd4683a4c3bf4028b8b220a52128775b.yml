@@ -1,0 +1,40 @@
+_id: req_fd4683a4c3bf4028b8b220a52128775b
+type: Request
+parentId: fld_4c97d9ed9b7848b4af9e9ce9c9ebc67f
+modified: 1605470278044
+created: 1605470278044
+url: "{{ENVIRONMENT}}"
+name: listAccounts
+description: |-
+  Returns all the Core account addresses of all keys in the key store.
+
+  **Parameters**
+
+  none
+
+  **Returns**
+
+  `ARRAY` - HEX of addresses.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"personal_listAccounts",
+    	"params":[],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470278044
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

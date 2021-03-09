@@ -1,0 +1,12 @@
+_id: fld_27694d74b1954c9681f056327110f15b
+type: RequestGroup
+parentId: fld_daf1d40b10fd473fa0453862d754833b
+modified: 1605470277901
+created: 1605470277901
+name: debug
+description: The debug API gives you access to several non-standard RPC methods,
+  which will allow you to inspect, debug and set certain debugging flags during
+  runtime.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1605470277901

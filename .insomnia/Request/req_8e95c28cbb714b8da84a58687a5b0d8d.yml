@@ -1,0 +1,39 @@
+_id: req_8e95c28cbb714b8da84a58687a5b0d8d
+type: Request
+parentId: fld_4de8652689664c31936b4a40f2821ff5
+modified: 1605470277943
+created: 1605470277943
+url: "{{ENVIRONMENT}}"
+name: setEnergyPrice
+description: >-
+  Sets the minimal accepted energy price when mining transactions. Any
+  transactions that are below this limit are excluded from the mining process.
+
+
+  **Parameters**
+
+
+  `NUMBER` - Energy price in Ore.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"miner_setEnergyPrice",
+    	"params":[30000],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277943
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

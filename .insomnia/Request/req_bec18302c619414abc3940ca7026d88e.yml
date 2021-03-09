@@ -1,0 +1,41 @@
+_id: req_bec18302c619414abc3940ca7026d88e
+type: Request
+parentId: fld_27694d74b1954c9681f056327110f15b
+modified: 1605470277879
+created: 1605470277879
+url: "{{ENVIRONMENT}}"
+name: setHead
+description: >-
+  Sets the current head of the local chain by block number.
+
+
+  **Note:** this is a destructive action and may severely damage your chain. Use with extreme caution!
+
+
+  **Parameters**
+
+
+  `NUMBER` - Block number.
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+    	"jsonrpc":"2.0",
+    	"method":"debug_setHead",
+    	"params":[1],
+    	"id":1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1605470277879
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
